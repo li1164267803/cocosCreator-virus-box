@@ -3,6 +3,7 @@ cc.Class({
     extends: cc.Component,
 
     properties: {
+        m_GoldNode: cc.Node, // 顶部的金币node
         // foo: {
         //     // ATTRIBUTES:
         //     default: null,        // The default value will be used only when the component attaching
@@ -21,6 +22,9 @@ cc.Class({
     moveIn() { // 移出logo
         this.node.setPosition(cc.v2(0, 942));
         this.node.runAction(cc.moveTo(0.2, 0, 736).easing(cc.easeBackOut()))
+    },
+    getGoldNode: function () {
+        return this.m_GoldNode;
     },
     start() {
 

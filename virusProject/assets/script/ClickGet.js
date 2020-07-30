@@ -21,9 +21,15 @@ cc.Class({
         this.node.runAction(moveTo.easing(cc.easeBackOut()))
     },
     onClickGet(terget, data) {
+        window.gameCtl.createGoldAnim(
+            this.node.getPosition(),
+            cc.v2(-375, 710),
+            200,
+            15
+        )
         console.log('金币');
-
     },
+
     start() {
 
     },

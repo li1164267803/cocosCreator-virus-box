@@ -13,9 +13,6 @@ cc.Class({
         this.width = width;
     },
     onLoad() { },
-    random(min, max) {
-        return Math.floor(Math.random() * (max - min)) + min
-    },
     Begin() {
         this.tail.runAction(cc.fadeOut(0.7));
         let _out = cc.fadeOut(0.2);
@@ -27,8 +24,8 @@ cc.Class({
         this.virusAction()
     },
     virusAction() {
-        let x = this.random(0, this.width); // 获取随机的位置
-        let y = this.random(0, this.width);
+        let x = random(0, this.width); // 获取随机的位置
+        let y = random(0, this.width);
         let v2 = cc.v2(this.v2.x + x, this.v2.y + y);
         // 回调，无限循环
         let seq = cc.sequence(cc.moveTo(0.5, v2), cc.callFunc(() => {

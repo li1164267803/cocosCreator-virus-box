@@ -216,7 +216,7 @@
       "array": [
         0,
         0,
-        439.33198101045895,
+        439.0748797187104,
         0,
         0,
         0,
@@ -1888,6 +1888,9 @@
       "__id__": 12
     },
     "_enabled": true,
+    "m_GoldNode": {
+      "__id__": 17
+    },
     "_id": "9b76q08U1LDrkg1FswH9gZ"
   },
   {
@@ -6674,7 +6677,7 @@
   {
     "__type__": "cc.Node",
     "_name": "ClickGet",
-    "_objFlags": 512,
+    "_objFlags": 0,
     "_parent": {
       "__id__": 2
     },
@@ -11199,6 +11202,9 @@
     },
     "m_airPlane": {
       "__id__": 177
+    },
+    "m_goldPrafab": {
+      "__uuid__": "286484e2-b899-4429-8ca8-56fac3f3ce51"
     },
     "_id": "b9O8iJUWhPrZDcq1EJKs+X"
   },
