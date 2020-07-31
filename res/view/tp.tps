@@ -311,6 +311,7 @@
             <filename>icmain.png</filename>
             <filename>icon_0.png</filename>
             <filename>arrUp.png</filename>
+            <filename>bg.png</filename>
         </array>
         <key>ignoreFileList</key>
         <array/>

@@ -145,6 +145,33 @@ cc.Class({
         }
         return point;
     },
+    Action(action) { // 开始飞机动画的一些方法
+        if (action == ACTION_RESET) {
+            this.ActionReset();
+        } else if (action == ACTION_PLAY) {
+            this.ActionPlay();
+        } else if (action == ACTION_MOVE_OUT) {
+            this.ActionMoveOut();
+        } else if (action == ACTION_MOVE_IN) {
+            this.ActionMoveIn();
+        }
+    },
+    ActionReset() { // 重置
+        this.m_ClassArray.forEach(v => v.reset && v.reset());
+    },
+    ActionPlay() { // 开始播放 
+        this.m_ClassArray.forEach(v => v.play && v.play());
+    },
+    ActionMoveOut() { // 移出
+        this.m_ClassArray.forEach(v => v.moveOut && v.moveOut());
+    },
+    ActionMoveIn() { // 移入
+        this.m_ClassArray.forEach(v => v.moveIn && v.moveIn());
+    },
+    moveAirPlane(pos) { // 移动飞机的位置
+        let slefPos = this.m_airPlane.node.getPosition();
+        this.m_airPlane.node.setPosition(cc.v2(slefPos.x + pos.x, slefPos.y + pos.y))
+    },
     test(target, data) {
         if (data == '重置') {
             // window.gDataCtl.AddGold(999);

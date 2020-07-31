@@ -1,3 +1,10 @@
+
+
+const ACTION_RESET = 0; // 重置
+const ACTION_PLAY = 1; // 开始
+const ACTION_MOVE_OUT = 2; // 离开
+const ACTION_MOVE_IN = 3; // 进入
+
 window.gameCtl = null; // 创建全局的金币动画
 
 function random(min, max) { // 随机数
