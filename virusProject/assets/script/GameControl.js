@@ -1,4 +1,3 @@
-let data = require('data');
 
 cc.Class({
     extends: cc.Component,
@@ -20,8 +19,6 @@ cc.Class({
         console.log('父的ctor');
         this.m_ClassArray = []; // 获取的数据集合
         this.goldPool = new cc.NodePool(); // 创建对象池的容器
-        window.gDataCtl = new data();
-        window.gDataCtl.load()
     },
     onLoad() {
         window.gameCtl = this;
@@ -58,25 +55,27 @@ cc.Class({
         this.m_ClassArray.push(this.m_airPlane);
         this.m_airPlane.play();
     },
-    createGoldAnim(srcPos, dstPos, radius, goldCount, ) { // 创建金币的动画
+    createGoldAnim(srcPos, dstPos, radius, goldCount, addGold, callBack) { // 创建金币的动画
         /**
-         * srcPos 位置
-         * dstPos 
-         * radius 半径
+         * srcPos 开始位置
+         * dstPos 目标位置
+         * radius 圆半径
          * goldCount 产生的个数
+         * addGold:需要增加多少金币
+         * callBack:动画结束回调
          */
         let arr = this.getPoint(radius, srcPos.x, srcPos.y, goldCount);
         let nodeArr = [];
 
         arr.forEach(v => {
-            let gold = cc.instantiate(this.m_goldPrafab);
+            let gold = this.createGold(this.node); // 使用金币对象池
             // 随机位置
             let randPos = cc.v2(v.x + random(0, 50), v.y + random(0, 50));
             gold.setPosition(srcPos);
             nodeArr.push({ gold, randPos })
 
         });
-        // 根据两点的距离排序
+        // 根据两点的距离排序 距离近的先到目标点
         nodeArr.sort((a, b) => {
             let disa = distance(a.randPos, dstPos);
             let disb = distance(b.randPos, dstPos);
@@ -101,6 +100,9 @@ cc.Class({
                         )
                         targetGoldNode.runAction(seq);
                     }
+                    if (i == nodeArr.length - 1) {
+                        if (callBack != null) callBack(addGold);
+                    }
                     this.onGoldKilled(v)
                 })
             )
@@ -114,10 +116,11 @@ cc.Class({
         if (this.goldPool.size() > 0) { // 通过 size 接口判断对象池中是否有空闲的对象
             enemy = this.goldPool.get();
         } else { // 如果没有空闲对象，也就是对象池中备用对象不够时，我们就用 cc.instantiate 重新创建
-            enemy = cc.instantiate(this.enemyPrefab);
+            enemy = cc.instantiate(this.m_goldPrafab);
         }
         enemy.parent = parentNode; // 将生成的敌人加入节点树
-        enemy.getComponent('Enemy').init(); //接下来就可以调用 enemy 身上的脚本进行初始化
+        return enemy
+        // enemy.getComponent('Enemy').init(); //接下来就可以调用 enemy 身上的脚本进行初始化
     },
     onGoldKilled(gold) { // 返回到对象池
         // enemy 应该是一个 cc.Node
@@ -143,7 +146,11 @@ cc.Class({
         return point;
     },
     test(target, data) {
-        if (data == '重置') window.gDataCtl.AddGold(999);
+        if (data == '重置') {
+            // window.gDataCtl.AddGold(999);
+            // this.m_Top.updateData();
+            window.gDataCtl.del()
+        }
         this.m_ClassArray.forEach(v => {
             if (data == '重置') v.reset && v.reset()
             if (data == '播放') v.play && v.play()

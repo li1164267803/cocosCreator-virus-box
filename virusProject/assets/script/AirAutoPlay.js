@@ -4,13 +4,8 @@ cc.Class({
     // 用来播放飞机的自动脚本代码
     properties: {
         m_light: [cc.Node], // 机头圆圈
-        // foo: {
-        //     // ATTRIBUTES:
-        //     default: null,        // The default value will be used only when the component attaching
-        //                           // to a node for the first time
-        //     type: cc.SpriteFrame, // optional, default is typeof default
-        //     serializable: true,   // optional, default is true
-        // },
+        m_TailLight: cc.Node, // 飞机尾焰
+
     },
 
     onLoad() {
@@ -28,16 +23,25 @@ cc.Class({
     play() {
         this.node.setPosition(cc.v2(0, -966));
         this.node.setScale(cc.v2(0.8, 0.8));
+        this.m_TailLight.setScale(cc.v2(1, 1))
         let seq = cc.sequence(cc.delayTime(0.5), cc.moveTo(0.4, cc.v2(0, -415)), cc.scaleTo(0.4, 1, 1));
         this.node.runAction(seq);
+
+        let seqTailLight = cc.sequence(
+            cc.delayTime(1),
+            cc.scaleTo(0.5, 0.6, 0.6)
+        );
+        this.m_TailLight.runAction(seqTailLight);
     },
     moveOut() { // 移出
-        // let moveTo = cc.moveTo(0.3, cc.v2(0, -966));
-        // this.node.runAction(moveTo.easing(cc.easeBackOut()));
+        let scaleTo = cc.scaleTo(0.3, 0.6, 0.6);
+        this.node.runAction(scaleTo.easing(cc.easeBackOut()));
+        this.m_TailLight.runAction(cc.scaleTo(0.5, 1, 1));
     },
     moveIn() { // 移入
-        let moveTo = cc.moveTo(0.3, cc.v2(0, -415));
-        this.node.runAction(moveTo.easing(cc.easeBackOut()));
+        let scaleTo = cc.scaleTo(0.3, 1, 1);
+        this.node.runAction(scaleTo.easing(cc.easeBackOut()));
+        this.m_TailLight.runAction(cc.scaleTo(0.5, 0.6, 0.6));
     },
     start() {
 

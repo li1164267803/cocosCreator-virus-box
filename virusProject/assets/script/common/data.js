@@ -5,53 +5,100 @@
 // JSON.parse(jsonstr); //可以将json字符串转换成json对象 
 // JSON.stringify(jsonobj); //可以将json对象转换成json对符串 
 
-cc.Class({
-    del: function () {
-        cc.sys.localStorage.removeItem(data);
+let data = cc.Class({
+    ctor: function () {
+        this.gData = {}
+    },
+    del: function () { // 删除
+        cc.sys.localStorage.removeItem('data');
         this.load();
     },
-    save: function () {
-        var str = JSON.stringify(window.gData);
+    save: function () { // 保存
+        var str = JSON.stringify(this.gData);
         cc.sys.localStorage.setItem('data', str);
     },
     load: function () {
-        console.log('loadloadload');
         var str = cc.sys.localStorage.getItem('data');
         if (str) {
-            window.gData = JSON.parse(str);
+            this.gData = JSON.parse(str);
         } else {
-            window.gData = {}
+            this.gData = {}
         }
-        return window.gData;
+        return this.gData;
     },
-
-    AddGold: function (gold) {
-        console.log("window.gData", window.gData)
-        if (window.gData.m_Gold == null) {
-            window.gData.m_Gold = 0;
+    AddGold: function (gold) { // 设置top金币数
+        if (this.gData.m_Gold == null) {
+            this.gData.m_Gold = 0;
         }
-        window.gData.m_Gold += gold;
+        this.gData.m_Gold += gold;
         this.save();
     },
-    GetGold: function () {
-        if (window.gData.m_Gold == null) {
-            window.gData.m_Gold = 0;
+    getGold: function () { // 获取总得金币数
+        if (this.gData.m_Gold == null) {
+            this.gData.m_Gold = 0;
         }
-        return window.gData.m_Gold;
+        return this.gData.m_Gold;
     },
     AddGetGold: function (gold) {
-
-        if (window.gData.m_GetGold == null) {
-            window.gData.m_GetGold = 0;
+        if (this.gData.m_GetGold == null) {
+            this.gData.m_GetGold = 0;
         }
-        window.gData.m_GetGold += gold;
+        this.gData.m_GetGold += gold;
         this.save();
     },
     GetGetGold: function () {
-        if (window.gData.m_GetGold == null) {
-            window.gData.m_GetGold = 0;
+        if (this.gData.m_GetGold == null) {
+            this.gData.m_GetGold = 0;
         }
-        return window.gData.m_GetGold;
+        return this.gData.m_GetGold;
     },
-
+    // 设置获取金币时间
+    setColdAddTime(time) {
+        this.gData.m_GetGoldTime = time;
+    },
+    // 获取，金币进度时间
+    getColdAddTime() {
+        if (this.gData.m_GetGoldTime == null) {
+            this.gData.m_GetGoldTime = 3
+        }
+        return this.gData.m_GetGoldTime
+    },
+    // 设置奖励金币
+    setAwardGold(gold) {
+        this.gData.m_AwardGold = gold;
+        this.save()
+    },
+    // 获取奖励金币
+    getAwardGold() {
+        if (this.gData.m_AwardGold == null) {
+            this.gData.m_AwardGold = 4
+        }
+        return this.gData.m_AwardGold
+    },
+    // 添加得黄金
+    addTaskGold(gold) {
+        if (this.gData.m_TaskGold == null) {
+            this.gData.m_TaskGold = 0
+        }
+        this.gData.m_TaskGold += gold;
+        this.save()
+    },
+    // 清除黄金
+    clearTaskGold: function () {
+        this.gData.m_TaskGold = 0;
+        this.save();
+    },
+    // 获取黄金
+    getTaskGold: function () {
+        if (this.gData.m_TaskGold == null) {
+            this.gData.m_TaskGold = 0
+        }
+        return this.gData.m_TaskGold;
+    },
 });
+
+// window.gData = {}; // 全局的本地数据
+// window.gDataCtl = null; // 设置数据的方法
+window.gDataCtl = new data();
+window.gDataCtl.load();
+window.gData = window.gDataCtl.gData;
