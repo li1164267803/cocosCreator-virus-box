@@ -13,24 +13,30 @@ cc.Class({
         m_Bg: cc.Node, // 背景图
         m_airPlane: cc.Node, // 飞机
         m_goldPrafab: cc.Prefab, // 金币
+        m_TouchControl: cc.Node, // 触摸遮罩
+        m_BulletPrefab: cc.Prefab, // 子弹的Prefab
     },
 
     ctor() {
         console.log('父的ctor');
         this.m_ClassArray = []; // 获取的数据集合
-        this.goldPool = new cc.NodePool(); // 创建对象池的容器
+        this.goldPool = new cc.NodePool(); // 创建金币对象池的容器
+        this.bulletPool = new cc.NodePool(); // 创建子弹对象池的容器
     },
     onLoad() {
+        // 开启碰撞检测
+        cc.director.getCollisionManager().enabled = true;
+        // cc.director.getCollisionManager().enabledDebugDraw = true;
+
         window.gameCtl = this;
         console.log('父的onLoad');
 
         this.logo = this.logo.getComponent('Logo');
         this.m_ClassArray.push(this.logo);
-        this.logo.play();
 
         this.levelDesign = this.levelDesign.getComponent('leveDesign');
-        this.m_ClassArray.push(this.levelDesign);
         this.levelDesign.reset();
+        this.m_ClassArray.push(this.levelDesign);
 
         this.m_Top = this.m_Top.getComponent('Top');
         this.m_ClassArray.push(this.m_Top);
@@ -49,11 +55,14 @@ cc.Class({
 
         this.m_Bg = this.m_Bg.getComponent('Bg');
         this.m_ClassArray.push(this.m_Bg);
-        this.m_Bg.play()
 
         this.m_airPlane = this.m_airPlane.getComponent('AirAutoPlay');
         this.m_ClassArray.push(this.m_airPlane);
-        this.m_airPlane.play();
+        window.gAirPlane = this.m_airPlane; // 全局的自动飞机
+
+        this.m_ClassArray.forEach(v => v.play && v.play());
+
+        this.scheduleOnce(() => this.m_TouchControl.active = true, 1.5); // 1.5 秒后才能点击，先完成首页的动画过度
     },
     createGoldAnim(srcPos, dstPos, radius, goldCount, addGold, callBack) { // 创建金币的动画
         /**
@@ -124,8 +133,61 @@ cc.Class({
     },
     onGoldKilled(gold) { // 返回到对象池
         // enemy 应该是一个 cc.Node
-        console.log('回');
         this.goldPool.put(gold); // 和初始化时的方法一样，将节点放进对象池，这个方法会同时调用节点的 removeFromParent
+    },
+    createBullte(count) { // 创建子弹对象池
+        /**
+         * count 创建几个子弹
+         */
+        if (count <= 1) {
+            let bullteNode = null;
+            if (this.bulletPool.size() > 0) { // 通过 size 接口判断对象池中是否有空闲的对象
+                bullteNode = this.bulletPool.get();
+            } else { // 如果没有空闲对象，也就是对象池中备用对象不够时，我们就用 cc.instantiate 重新创建
+                bullteNode = cc.instantiate(this.m_BulletPrefab);
+            }
+            bullteNode.parent = this.node; // 创建到canvas上
+            let pos = this.m_airPlane.node.getPosition();
+            pos.y += 116;
+            bullteNode.setPosition(pos);
+        } else { // 多个子弹时的位置显示
+            let left = 1; // 左边显示几个子弹
+            let right = 1;// 右边显示几个子弹
+            let imgSize = 30; // 图片的宽度
+            for (let i = 0; i < count; i++) {
+                let ofset = 0;
+                if (count % 2 != 0 && i == 0) { // 子弹为奇数时，设置第一个为0
+                    ofset = 0;
+                    imgSize = 60;
+                } else {
+                    if (i % 2) {
+                        ofset = -imgSize * left; // 左边的图片宽度
+                        ofset += imgSize / 2;
+                        left++;
+                    } else {
+                        ofset = imgSize * right; // 右边子弹总宽度
+                        ofset -= imgSize / 2; // 向左偏移半个子弹的距离
+                        right++;
+                    }
+                }
+                let bullteNode = null;
+                if (this.bulletPool.size() > 0) { // 通过 size 接口判断对象池中是否有空闲的对象
+                    bullteNode = this.bulletPool.get();
+                } else { // 如果没有空闲对象，也就是对象池中备用对象不够时，我们就用 cc.instantiate 重新创建
+                    bullteNode = cc.instantiate(this.m_BulletPrefab);
+                }
+                bullteNode.parent = this.node; // 创建到canvas上
+                let pos = this.m_airPlane.node.getPosition();
+                pos.y += 116;
+                bullteNode.setPosition(pos);
+                let js = bullteNode.getComponent('Bullet');
+                js.init();
+                js.setSecondPos(cc.v2(pos.x + ofset, pos.y + 80));
+            }
+        }
+    },
+    onBullteKilled(bullte) { // 返回到对象池
+        this.bulletPool.put(bullte); // 和初始化时的方法一样，将节点放进对象池，这个方法会同时调用节点的 removeFromParent
     },
     getPoint(r, ox, oy, count) {
         /**

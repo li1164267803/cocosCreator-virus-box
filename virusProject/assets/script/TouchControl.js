@@ -19,16 +19,14 @@ cc.Class({
     TouchStart() {
         this.m_BG.runAction(cc.fadeOut(0.5));
         console.log('TouchStart');
+        window.gAirPlane.BeginFire(); // 显示飞机枪
+        this.scheduleOnce(() => { // 0.5 秒后才能点击，先完成首页的动画过度
+            this.m_isCanTouchMove = true;
+        }, 0.5)
         if (this.m_isPlaying) return;
         this.m_isPlaying = true;
         window.gameCtl.Action(ACTION_MOVE_OUT); // 开始移动
-        let seq = cc.sequence( // 0.5 秒后才能点击，先完成首页的动画过度
-            cc.delayTime(0.5),
-            cc.callFunc(() => {
-                this.m_isCanTouchMove = true;
-            })
-        );
-        this.node.runAction(seq);
+
     },
     TouchMove(evevt) {
         if (!this.m_isCanTouchMove) return
@@ -37,6 +35,7 @@ cc.Class({
         console.log('TouchMove');
     },
     TouchEnd() {
+        window.gAirPlane.EndFire();
         this.m_BG.runAction(cc.fadeIn(0.5))
         console.log('TouchEnd');
     },

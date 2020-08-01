@@ -5,7 +5,12 @@ const ACTION_PLAY = 1; // 开始
 const ACTION_MOVE_OUT = 2; // 离开
 const ACTION_MOVE_IN = 3; // 进入
 
+window.COLLISION_WALL = 0; // 碰撞墙
+window.COLLISION_BULLET = 1; // 碰撞子弹
+window.COLLISION_VIRUS = 2; // 碰撞病毒
+
 window.gameCtl = null; // 创建全局的金币动画
+window.gAirPlane = null; // 全局的自动飞机
 
 function random(min, max) { // 随机数
     return Math.floor(Math.random() * (max - min)) + min

@@ -43,33 +43,33 @@ cc.Class({
         this.node.runAction(spa.easing(cc.easeBackOut()))
     },
     play() { // 播放
-        this.item.forEach((v, i) => {
-            let moveTo = cc.moveTo(0.5, cc.v2(this.basePos[i - 1])); // 获取需要移动的位置
-            if (i == 1) {
-                let out = cc.fadeOut(0.5);
-                let spawn = cc.spawn(out, moveTo);
-                v.runAction(spawn);
-            } else if (i == 2) {
-                let scale = cc.scaleTo(0.5, 0.6);
-                let spawn = cc.spawn(scale, moveTo);
-                v.runAction(spawn);
-            } else if (i == 3) {
-                let scale = cc.scaleTo(0.5, 1);
-                let spawn = cc.spawn(scale, moveTo);
-                v.runAction(spawn);
-            } else if (i == 4) {
-                let _in = cc.fadeIn(0.5);
-                let spawn = cc.spawn(_in, moveTo);
-                v.runAction(spawn);
-            }
-        });
-        // 延迟重置关卡位置
-        let dly = cc.delayTime(0.5);
-        let seq = cc.sequence(dly, cc.callFunc(() => {
-            this.curLevel++;
-            this.reset()
-        }))
-        this.node.runAction(seq);
+        // this.item.forEach((v, i) => {
+        //     let moveTo = cc.moveTo(0.5, cc.v2(this.basePos[i - 1])); // 获取需要移动的位置
+        //     if (i == 1) {
+        //         let out = cc.fadeOut(0.5);
+        //         let spawn = cc.spawn(out, moveTo);
+        //         v.runAction(spawn);
+        //     } else if (i == 2) {
+        //         let scale = cc.scaleTo(0.5, 0.6);
+        //         let spawn = cc.spawn(scale, moveTo);
+        //         v.runAction(spawn);
+        //     } else if (i == 3) {
+        //         let scale = cc.scaleTo(0.5, 1);
+        //         let spawn = cc.spawn(scale, moveTo);
+        //         v.runAction(spawn);
+        //     } else if (i == 4) {
+        //         let _in = cc.fadeIn(0.5);
+        //         let spawn = cc.spawn(_in, moveTo);
+        //         v.runAction(spawn);
+        //     }
+        // });
+        // // 延迟重置关卡位置
+        // let dly = cc.delayTime(0.5);
+        // let seq = cc.sequence(dly, cc.callFunc(() => {
+        //     this.curLevel++;
+        //     this.reset()
+        // }))
+        // this.node.runAction(seq);
     },
     start() {
         console.log('子的start');

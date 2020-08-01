@@ -5,7 +5,7 @@ cc.Class({
     properties: {
         m_light: [cc.Node], // 机头圆圈
         m_TailLight: cc.Node, // 飞机尾焰
-
+        m_Gun: cc.Node, // 飞机枪
     },
 
     onLoad() {
@@ -18,7 +18,7 @@ cc.Class({
             )
             v.runAction(seq.repeatForever())
         });
-
+        this.m_Gun = this.m_Gun.getComponent('Gun'); // 获取js
     },
     play() {
         this.node.setPosition(cc.v2(0, -966));
@@ -43,9 +43,12 @@ cc.Class({
         this.node.runAction(scaleTo.easing(cc.easeBackOut()));
         this.m_TailLight.runAction(cc.scaleTo(0.5, 0.6, 0.6));
     },
-    start() {
-
+    BeginFire: function () { // 开火
+        this.m_Gun.BeginFire();
     },
+    EndFire: function () { // 结束开火
+        this.m_Gun.EndFire();
+    }
 
     // update (dt) {},
 });
