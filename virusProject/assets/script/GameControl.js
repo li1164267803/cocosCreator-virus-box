@@ -15,6 +15,7 @@ cc.Class({
         m_goldPrafab: cc.Prefab, // 金币
         m_TouchControl: cc.Node, // 触摸遮罩
         m_BulletPrefab: cc.Prefab, // 子弹的Prefab
+        m_MonsterHP: cc.Node, // 怪物的HP 进度条
     },
 
     ctor() {
@@ -59,6 +60,9 @@ cc.Class({
         this.m_airPlane = this.m_airPlane.getComponent('AirAutoPlay');
         this.m_ClassArray.push(this.m_airPlane);
         window.gAirPlane = this.m_airPlane; // 全局的自动飞机
+
+        this.m_MonsterHP = this.m_MonsterHP.getComponent('MonsterHP');
+        this.m_ClassArray.push(this.m_MonsterHP);
 
         this.m_ClassArray.forEach(v => v.play && v.play());
 

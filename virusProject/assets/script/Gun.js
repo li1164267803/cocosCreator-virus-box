@@ -17,7 +17,7 @@ cc.Class({
     },
     BeginFire() { // 开始开火
         this.createBulltCallBack();
-        this.schedule(this.createBulltCallBack, 0.1);
+        this.schedule(this.createBulltCallBack, 0.3);
         this.node.active = true;
     },
     EndFire() { // 结束开火

@@ -312,6 +312,8 @@
             <filename>icon_0.png</filename>
             <filename>arrUp.png</filename>
             <filename>bg.png</filename>
+            <filename>xueTiao.png</filename>
+            <filename>xueTiaoBg.png</filename>
         </array>
         <key>ignoreFileList</key>
         <array/>
