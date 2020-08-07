@@ -13,11 +13,11 @@ cc.Class({
     },
     createBulltCallBack() {
         console.log('创建子弹');
-        window.gameCtl.createBullte(3); // 创建子弹
+        window.gameCtl.createBullte(4); // 创建子弹
     },
     BeginFire() { // 开始开火
         this.createBulltCallBack();
-        this.schedule(this.createBulltCallBack, 0.3);
+        this.schedule(this.createBulltCallBack, 0.2);
         this.node.active = true;
     },
     EndFire() { // 结束开火

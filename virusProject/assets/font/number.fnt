@@ -1,0 +1,31 @@
+info face="number" size=32 bold=0 italic=0 charset="" unicode=0 stretchH=100 smooth=1 aa=1 padding=0,0,0,0 spacing=1,1
+common lineHeight=201 base=26 scaleW=1024 scaleH=512 pages=1 packed=0 alphaChnl=1 redChnl=0 greenChnl=0 blueChnl=0
+page id=0 file="number.png"
+chars count=25
+char id=48 x=126 y=270 width=120 height=132 xoffset=0 yoffset=68 xadvance=132 page=0 chnl=0 letter="0"
+char id=49 x=782 y=0 width=68 height=132 xoffset=0 yoffset=68 xadvance=80 page=0 chnl=0 letter="1"
+char id=50 x=154 y=0 width=113 height=129 xoffset=0 yoffset=71 xadvance=125 page=0 chnl=0 letter="2"
+char id=51 x=573 y=137 width=105 height=135 xoffset=0 yoffset=66 xadvance=117 page=0 chnl=0 letter="3"
+char id=52 x=247 y=262 width=110 height=136 xoffset=0 yoffset=65 xadvance=122 page=0 chnl=0 letter="4"
+char id=53 x=358 y=131 width=109 height=136 xoffset=0 yoffset=66 xadvance=121 page=0 chnl=0 letter="5"
+char id=54 x=358 y=268 width=107 height=137 xoffset=0 yoffset=64 xadvance=119 page=0 chnl=0 letter="6"
+char id=55 x=466 y=268 width=106 height=135 xoffset=0 yoffset=66 xadvance=118 page=0 chnl=0 letter="7"
+char id=56 x=573 y=273 width=105 height=139 xoffset=0 yoffset=62 xadvance=117 page=0 chnl=0 letter="8"
+char id=57 x=468 y=0 width=106 height=136 xoffset=0 yoffset=62 xadvance=118 page=0 chnl=0 letter="9"
+char id=98 x=575 y=0 width=103 height=134 xoffset=0 yoffset=66 xadvance=115 page=0 chnl=0 letter="b"
+char id=100 x=353 y=0 width=109 height=130 xoffset=0 yoffset=71 xadvance=121 page=0 chnl=0 letter="d"
+char id=101 x=775 y=275 width=93 height=131 xoffset=0 yoffset=71 xadvance=105 page=0 chnl=0 letter="e"
+char id=107 x=128 y=135 width=113 height=131 xoffset=0 yoffset=67 xadvance=125 page=0 chnl=0 letter="k"
+char id=108 x=781 y=135 width=91 height=133 xoffset=0 yoffset=68 xadvance=103 page=0 chnl=0 letter="l"
+char id=109 x=0 y=0 width=153 height=134 xoffset=0 yoffset=67 xadvance=165 page=0 chnl=0 letter="m"
+char id=112 x=679 y=0 width=102 height=134 xoffset=0 yoffset=67 xadvance=114 page=0 chnl=0 letter="p"
+char id=115 x=679 y=135 width=101 height=139 xoffset=0 yoffset=68 xadvance=113 page=0 chnl=0 letter="s"
+char id=116 x=679 y=275 width=95 height=135 xoffset=0 yoffset=68 xadvance=107 page=0 chnl=0 letter="t"
+char id=120 x=0 y=135 width=127 height=134 xoffset=0 yoffset=73 xadvance=139 page=0 chnl=0 letter="x"
+char id=121 x=0 y=270 width=125 height=137 xoffset=0 yoffset=70 xadvance=137 page=0 chnl=0 letter="y"
+char id=122 x=242 y=130 width=110 height=131 xoffset=0 yoffset=70 xadvance=122 page=0 chnl=0 letter="z"
+char id=46 x=0 y=408 width=35 height=35 xoffset=0 yoffset=166 xadvance=47 page=0 chnl=0 letter="."
+char id=32 x=0 y=0 width=0 height=0 xoffset=0 yoffset=0 xadvance=77 page=0 chnl=0 letter=" "
+char id=9 x=0 y=0 width=0 height=0 xoffset=0 yoffset=0 xadvance=616 page=0 chnl=0 letter="	"
+
+kernings count=0

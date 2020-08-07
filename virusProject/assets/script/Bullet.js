@@ -14,9 +14,11 @@ cc.Class({
         this.m_updateMove = false;
     },
     onCollisionEnter: function (other, self) {
+        // tag 为0 的时候是碰到了病毒
+        if (other.tag == 0) gameCtl.onBullteKilled(this.node); // 消除子弹
         // console.log("//onLoad -> other", other)
         // if( self.node === this.node){
-        //     gGameCtl.onBulletKilled(this.node);
+        //     gameCtl.onBulletKilled(this.node);
         // }
     },
     setSecondPos(pos) { // 设置子弹位置

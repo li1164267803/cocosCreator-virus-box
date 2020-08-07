@@ -37,3 +37,13 @@ function goldCrarryBit(gold) { // 货币进位
     }
     return gold
 }
+
+function setVirusColor(node, color) { // 设置病毒颜色
+    if (node.children.length >= 1) {
+        node.children.forEach(nodeChildren => {
+            let js = nodeChildren.getComponent('color');
+            if (js) nodeChildren.color = color;
+            setVirusColor(nodeChildren, color)
+        });
+    }
+}

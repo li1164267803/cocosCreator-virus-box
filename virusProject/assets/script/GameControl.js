@@ -160,9 +160,18 @@ cc.Class({
             let imgSize = 30; // 图片的宽度
             for (let i = 0; i < count; i++) {
                 let ofset = 0;
-                if (count % 2 != 0 && i == 0) { // 子弹为奇数时，设置第一个为0
-                    ofset = 0;
-                    imgSize = 60;
+                if (count % 2 != 0) { // 子弹为奇数时，设置第一个为0
+                    if (i == 0) {
+                        ofset = 0;
+                    } else if (i % 2) {
+                        ofset = -imgSize * left; // 左边的图片宽度
+                        ofset += imgSize / 2 - 15;
+                        left++;
+                    } else {
+                        ofset = imgSize * right; // 右边子弹总宽度
+                        ofset -= imgSize / 2 - 15; // 向左偏移半个子弹的距离 多减去15为第一个子弹宽度的一半
+                        right++;
+                    }
                 } else {
                     if (i % 2) {
                         ofset = -imgSize * left; // 左边的图片宽度

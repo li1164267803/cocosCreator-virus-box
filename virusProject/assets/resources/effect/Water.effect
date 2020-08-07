@@ -82,9 +82,9 @@ CCProgram fs %{
         // 换成纹理坐标v_texCoord.xy
         vec2 uv = fragCoord;
         vec2 q = uv+10./iResolution.x*(s(uv)-s(uv+rs));  // 这里可以修改波纹扭曲程度
-
         //反转y
         //q.y=1.-q.y;
+        
         // 修改颜色1：
         // fragColor = vec4(1,0,0,1) * texture2D(texture, q);  
         // 修改颜色2：使用 colorR / 255.0 除法整数必须要加.0  根据编辑器手动传入colorR... 值修改
