@@ -7,7 +7,7 @@
             <key>0-0.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{2,304},{300,335}}</string>
+                <string>{{339,2},{300,335}}</string>
                 <key>offset</key>
                 <string>{0,0}</string>
                 <key>rotated</key>
@@ -30,10 +30,153 @@
                 <key>sourceSize</key>
                 <string>{300,335}</string>
             </dict>
+            <key>b1 (5).png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{2,1336},{256,256}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <false/>
+                <key>sourceColorRect</key>
+                <string>{{0,0},{256,256}}</string>
+                <key>sourceSize</key>
+                <string>{256,256}</string>
+            </dict>
+            <key>b10 (2).png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{2,1078},{256,256}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <false/>
+                <key>sourceColorRect</key>
+                <string>{{0,0},{256,256}}</string>
+                <key>sourceSize</key>
+                <string>{256,256}</string>
+            </dict>
+            <key>b11 (3).png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{518,820},{256,256}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <false/>
+                <key>sourceColorRect</key>
+                <string>{{0,0},{256,256}}</string>
+                <key>sourceSize</key>
+                <string>{256,256}</string>
+            </dict>
+            <key>b2 (2).png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{260,820},{256,256}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <false/>
+                <key>sourceColorRect</key>
+                <string>{{0,0},{256,256}}</string>
+                <key>sourceSize</key>
+                <string>{256,256}</string>
+            </dict>
+            <key>b3 (3).png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{2,820},{256,256}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <false/>
+                <key>sourceColorRect</key>
+                <string>{{0,0},{256,256}}</string>
+                <key>sourceSize</key>
+                <string>{256,256}</string>
+            </dict>
+            <key>b4 (3).png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{518,562},{256,256}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <false/>
+                <key>sourceColorRect</key>
+                <string>{{0,0},{256,256}}</string>
+                <key>sourceSize</key>
+                <string>{256,256}</string>
+            </dict>
+            <key>b5 (3).png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{260,562},{256,256}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <false/>
+                <key>sourceColorRect</key>
+                <string>{{0,0},{256,256}}</string>
+                <key>sourceSize</key>
+                <string>{256,256}</string>
+            </dict>
+            <key>b6 (3).png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{2,562},{256,256}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <false/>
+                <key>sourceColorRect</key>
+                <string>{{0,0},{256,256}}</string>
+                <key>sourceSize</key>
+                <string>{256,256}</string>
+            </dict>
+            <key>b7 (3).png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{518,304},{256,256}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <false/>
+                <key>sourceColorRect</key>
+                <string>{{0,0},{256,256}}</string>
+                <key>sourceSize</key>
+                <string>{256,256}</string>
+            </dict>
+            <key>b8 (3).png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{260,304},{256,256}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <false/>
+                <key>sourceColorRect</key>
+                <string>{{0,0},{256,256}}</string>
+                <key>sourceSize</key>
+                <string>{256,256}</string>
+            </dict>
+            <key>b9 (3).png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{2,304},{256,256}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <false/>
+                <key>sourceColorRect</key>
+                <string>{{0,0},{256,256}}</string>
+                <key>sourceSize</key>
+                <string>{256,256}</string>
+            </dict>
             <key>virus.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{2,606},{300,300}}</string>
+                <string>{{676,2},{300,300}}</string>
                 <key>offset</key>
                 <string>{0,0}</string>
                 <key>rotated</key>
@@ -51,9 +194,9 @@
             <key>realTextureFileName</key>
             <string>virusPlist.png</string>
             <key>size</key>
-            <string>{512,1024}</string>
+            <string>{1024,2048}</string>
             <key>smartupdate</key>
-            <string>$TexturePacker:SmartUpdate:b6300925b881841020445eea68cb550f$</string>
+            <string>$TexturePacker:SmartUpdate:b1280662cd796642308502d478eadbed$</string>
             <key>textureFileName</key>
             <string>virusPlist.png</string>
         </dict>
