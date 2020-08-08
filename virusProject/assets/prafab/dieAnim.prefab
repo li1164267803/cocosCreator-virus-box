@@ -114,6 +114,16 @@
     "_id": ""
   },
   {
+    "__type__": "231697imm1At5A2CgAdLWPe",
+    "_name": "",
+    "_objFlags": 0,
+    "node": {
+      "__id__": 1
+    },
+    "_enabled": true,
+    "_id": ""
+  },
+  {
     "__type__": "cc.Animation",
     "_name": "",
     "_objFlags": 0,
@@ -133,22 +143,12 @@
     "_id": ""
   },
   {
-    "__type__": "231697imm1At5A2CgAdLWPe",
-    "_name": "",
-    "_objFlags": 0,
-    "node": {
-      "__id__": 1
-    },
-    "_enabled": true,
-    "_id": ""
-  },
-  {
     "__type__": "cc.PrefabInfo",
     "root": {
       "__id__": 1
     },
     "asset": {
-      "__id__": 0
+      "__uuid__": "f0ff3af9-8c91-4ea8-8881-43630d08900d"
     },
     "fileId": "d9J5H1A01B2qtztgHLzbzf",
     "sync": false

@@ -5,6 +5,7 @@ cc.Class({
     properties: {
         m_VirusPrefab: [cc.Prefab], // 病毒Prefab
         m_animDie: cc.Prefab, // 病毒消灭特效
+        m_VirusParentl: cc.Node, // 病毒显示0，0载体
     },
 
     onLoad() {
@@ -16,8 +17,7 @@ cc.Class({
             this.virusPool[i] = new cc.NodePool();
         }
 
-        let node = this.createVirus(0);
-        node.setPosition(cc.v2(0, 964));
+        this.createVirus(0);
     },
     createVirus(id) { // 创建病毒
         let virus = null;
@@ -26,7 +26,7 @@ cc.Class({
         } else {
             virus = cc.instantiate(this.m_VirusPrefab[id]);
         }
-        virus.parent = gGameCtl.node;
+        virus.parent = this.m_VirusParentl;
         let js = virus.getComponent(`${id}`);
         js.init();
         virus.id = id;
@@ -47,7 +47,7 @@ cc.Class({
         } else {
             anim = cc.instantiate(this.m_animDie);
         }
-        anim.parent = gGameCtl.node;
+        anim.parent = this.m_VirusParentl;
 
         anim.x = pos.x;
         anim.y = pos.y;
@@ -55,10 +55,12 @@ cc.Class({
         anim.color = color;
 
         let js = anim.getComponent(cc.Animation);
-        js.playOver = function () {
-            this.onDieAnimKilled(anim);
-        }.bind(this)
-        js.play('die');
+        if (js) {
+            js.playOver = function () {
+                this.onDieAnimKilled(anim);
+            }.bind(this)
+            js.play('die');
+        }
     },
     onDieAnimKilled: function (node) { // 回收到池
         this.dieAnimPool.put(node);
