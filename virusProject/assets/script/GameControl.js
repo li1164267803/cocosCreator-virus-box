@@ -29,7 +29,7 @@ cc.Class({
         cc.director.getCollisionManager().enabled = true;
         // cc.director.getCollisionManager().enabledDebugDraw = true;
 
-        window.gameCtl = this;
+        window.gGameCtl = this;
         console.log('父的onLoad');
 
         this.logo = this.logo.getComponent('Logo');

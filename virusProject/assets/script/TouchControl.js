@@ -25,13 +25,13 @@ cc.Class({
         }, 0.5)
         if (this.m_isPlaying) return;
         this.m_isPlaying = true;
-        window.gameCtl.Action(ACTION_MOVE_OUT); // 开始移动
+        window.gGameCtl.Action(ACTION_MOVE_OUT); // 开始移动
 
     },
     TouchMove(evevt) {
         if (!this.m_isCanTouchMove) return
         let pos = evevt.getDelta(); // 获取按下时的鼠标移动位置
-        window.gameCtl.moveAirPlane(pos); // 移动飞机的位置
+        window.gGameCtl.moveAirPlane(pos); // 移动飞机的位置
         console.log('TouchMove');
     },
     TouchEnd() {

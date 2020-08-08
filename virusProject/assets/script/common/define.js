@@ -9,7 +9,7 @@ window.COLLISION_WALL = 0; // 碰撞墙
 window.COLLISION_BULLET = 1; // 碰撞子弹
 window.COLLISION_VIRUS = 2; // 碰撞病毒
 
-window.gameCtl = null; // 创建全局的金币动画
+window.gGameCtl = null; // 创建全局的金币动画
 window.gAirPlane = null; // 全局的自动飞机
 
 function random(min, max) { // 随机数

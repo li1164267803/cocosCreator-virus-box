@@ -24,8 +24,6 @@ cc.Class({
         if (other.tag == 100) {
             this.hit()
         }
-
-
     },
     hit() { // 被子弹击中
         this.m_HP -= 1

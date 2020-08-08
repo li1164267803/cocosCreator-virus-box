@@ -17,7 +17,7 @@ cc.Class({
     },
     onClickGet() { // 点击金币
         // if (gDataCtl.getTaskGold() <= 0) return;
-        window.gameCtl.createGoldAnim(
+        window.gGameCtl.createGoldAnim(
             this.node.getPosition(),
             cc.v2(-375, 710),
             200,
@@ -25,7 +25,7 @@ cc.Class({
             gDataCtl.getTaskGold(),
             (gold) => {
                 window.gDataCtl.AddGold(gold); // top添加金币
-                window.gameCtl.m_Top.updateData(); // 更新页面
+                window.gGameCtl.m_Top.updateData(); // 更新页面
             }
         );
         window.gDataCtl.clearTaskGold(); // 清空计时的金币
