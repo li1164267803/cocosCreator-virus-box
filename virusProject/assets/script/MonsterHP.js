@@ -1,9 +1,3 @@
-// Learn cc.Class:
-//  - https://docs.cocos.com/creator/manual/en/scripting/class.html
-// Learn Attribute:
-//  - https://docs.cocos.com/creator/manual/en/scripting/reference/attributes.html
-// Learn life-cycle callbacks:
-//  - https://docs.cocos.com/creator/manual/en/scripting/life-cycle-callbacks.html
 
 cc.Class({
     extends: cc.Component,
@@ -16,17 +10,17 @@ cc.Class({
 
     // LIFE-CYCLE CALLBACKS:
 
-    // onLoad () {},
+    onLoad() {
+        window.gVirusHpView = this;
+        this.m_HpProgress.progress = 1;
+    },
     reset() {
-        console.log('reset');
-
         this.m_Gold.string = 0;
         this.m_tipVirus.string = '100%';
         this.m_HpProgress.progress = 1;
     },
     moveOut() { // 显示进度条
         console.log('显示进度条');
-
         let seq = cc.sequence(
             cc.delayTime(0.5),
             cc.fadeIn(0.5)
@@ -37,6 +31,11 @@ cc.Class({
         console.log('隐藏进度条');
 
         this.node.runAction(cc.fadeOut(0.5));
+    },
+    changeProgress(progress) { // 修改页面进度条血量
+        this.m_HpProgress.progress = progress;
+        this.m_Gold.string = 0;
+        this.m_tipVirus.string = `${progress.toFixed(2) * 100}%`;
     },
 
     // update (dt) {},

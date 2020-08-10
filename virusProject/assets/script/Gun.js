@@ -13,7 +13,7 @@ cc.Class({
     },
     createBulltCallBack() {
         console.log('创建子弹');
-        window.gGameCtl.createBullte(4); // 创建子弹
+        window.gGameCtl.createBullte(2); // 创建子弹
     },
     BeginFire() { // 开始开火
         this.createBulltCallBack();

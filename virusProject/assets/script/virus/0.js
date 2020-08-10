@@ -13,11 +13,12 @@ cc.Class({
         this.m_bDie = false; // 是否死亡
         this.m_SpeedY = 0; // Y轴速度
         this.m_SpeedX = 0; // X轴速度
+        this.m_bSleep = false; // 病毒休眠状态
     },
     onLoad() {
         this.m_Back[0].runAction(cc.rotateBy(5, 360).repeatForever());
         this.m_Back[1].runAction(cc.rotateBy(5, -360).repeatForever());
-        this.setHp(20);
+        this.setHp(99);
         this.setColor(new cc.Color(255, 130, 113));
         this.init();
     },
@@ -33,20 +34,22 @@ cc.Class({
         this.node.setScale(cc.v2(1, 1));
         this.m_Body.setScale(cc.v2(1, 1));
         this.m_bDie = false; // 是否死亡
-        this.setMoveStart();
         this.randomSpeed();
+        this.setMoveStart();
         this.randomColor();
     },
     hit() { // 被子弹击中
         this.m_HP -= 1
         this.setHp(this.m_HP);
+        window.gVirusMake.hit(1)
+        this.runRandomColorAction(0.2, this.node); // 击中改变颜色
         if (this.m_HP <= 0) { // 血量见底
             this.m_bDie = true;
             let seq = cc.sequence(
                 cc.scaleTo(0.05, 0, 0),
                 cc.callFunc(() => {
                     window.gVirusMake.createDieAnim(this.node);
-                    window.gVirusMake.onDieAnimKilled(this.node);
+                    window.gVirusMake.onVirusKilled(this.node);
                 })
             );
             this.m_Body.runAction(seq);
@@ -66,13 +69,28 @@ cc.Class({
         }
     },
     setColor(color) { // 设置颜色
-        setVirusColor(this.node, color);
+        this.node.color = color;
+        setVirusColor(this.node, color); // 插件方法
     },
     setHp(num) { // 设置病毒血量
         this.m_HP = num
         this.m_labHp.string = num
     },
+    runRandomColorAction(time, node, color) { // 递归执行随机颜色切换动画
+        if (color == null) color = this.getRandomColor();
+        for (var i = 0; i < node.children.length; i++) {
+            var js = node.children[i].getComponent('color');
+            if (js != null) {
+                var colorAction = cc.tintTo(time, color.r, color.g, color.b); // 颜色过度动画
+                node.children[i].runAction(colorAction);
+            }
+            this.runRandomColorAction(time, node.children[i], color);
+        }
+    },
     randomColor() { // 随机病毒颜色
+        this.setColor(this.getRandomColor())
+    },
+    getRandomColor() { // 获取随机颜色
         var arr = new Array(3);
         arr[0] = random(127, 255);
         arr[1] = 127;
@@ -84,7 +102,7 @@ cc.Class({
             arr.splice(index, 1);
         }
         rgb.push(arr[0]);
-        this.setColor(new cc.Color(rgb[0], rgb[1], rgb[2]));
+        return new cc.Color(rgb[0], rgb[1], rgb[2])
     },
     randomSpeed() { // 随机速度
         this.m_SpeedY = random(100, 400);
@@ -94,6 +112,17 @@ cc.Class({
     setMoveStart() { // 设置开始的病毒位置
         this.node.y = 1780;
         this.node.x = random(160, 740); // 根据病毒的宽度计算的  位置的起点已左下角的0，0开始
+    },
+    sleep(sleep, pro) { // 休眠 修改速度
+        if (this.m_bSleep == sleep) return;
+        this.m_bSleep = sleep;
+        if (sleep) {
+            this.m_SpeedX /= pro;
+            this.m_SpeedY /= pro;
+        } else {
+            this.m_SpeedX *= pro;
+            this.m_SpeedY *= pro;
+        }
     },
     update(dt) {
         if (this.m_bDie) return;

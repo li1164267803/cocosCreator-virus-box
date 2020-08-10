@@ -7,7 +7,11 @@
 
 let data = cc.Class({
     ctor: function () {
-        this.gData = {}
+        this.gData = {}; // 全局的金币数据
+        this.gLevelDesign = [
+            { hp: 0 }, // 第0 关
+            { hp: [200, 200, 200], virus: [0], hpMin: 1, hpMax: 50 }, // 第1关
+        ]
     },
     del: function () { // 删除
         cc.sys.localStorage.removeItem('data');
@@ -95,6 +99,15 @@ let data = cc.Class({
         }
         return this.gData.m_TaskGold;
     },
+    GetCurLevelDesign: function () { // 获取当前的关卡
+        if (this.gData.m_LevelDesignNum == null) this.gData.m_LevelDesignNum = 1
+        return this.gData.m_LevelDesignNum;
+    },
+    AddCurLevelDesign: function () { // 设置关卡
+        if (this.gData.m_LevelDesignNum == null) this.gData.m_LevelDesignNum = 1
+        this.gData.m_LevelDesignNum++;
+        this.save();
+    },
 });
 
 // window.gData = {}; // 全局的本地数据
@@ -102,3 +115,4 @@ let data = cc.Class({
 window.gDataCtl = new data();
 window.gDataCtl.load();
 window.gData = window.gDataCtl.gData;
+window.gLevelDesign = window.gDataCtl.gLevelDesign; // 全局关卡数据

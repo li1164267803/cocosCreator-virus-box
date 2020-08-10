@@ -23,6 +23,7 @@ cc.Class({
         this.scheduleOnce(() => { // 0.5 秒后才能点击，先完成首页的动画过度
             this.m_isCanTouchMove = true;
         }, 0.5)
+        window.gVirusMake.sleepVirus(false, 10)
         if (this.m_isPlaying) return;
         this.m_isPlaying = true;
         window.gGameCtl.Action(ACTION_MOVE_OUT); // 开始移动
@@ -37,11 +38,8 @@ cc.Class({
     TouchEnd() {
         window.gAirPlane.EndFire();
         this.m_BG.runAction(cc.fadeIn(0.5))
+        window.gVirusMake.sleepVirus(true, 10)
         console.log('TouchEnd');
     },
-    start() {
-
-    },
-
     // update (dt) {},
 });

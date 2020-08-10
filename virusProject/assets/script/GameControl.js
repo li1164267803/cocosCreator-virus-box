@@ -16,6 +16,7 @@ cc.Class({
         m_TouchControl: cc.Node, // 触摸遮罩
         m_BulletPrefab: cc.Prefab, // 子弹的Prefab
         m_MonsterHP: cc.Node, // 怪物的HP 进度条
+        m_VirusMake: cc.Node, // 病毒的逻辑node
     },
 
     ctor() {
@@ -63,6 +64,10 @@ cc.Class({
 
         this.m_MonsterHP = this.m_MonsterHP.getComponent('MonsterHP');
         this.m_ClassArray.push(this.m_MonsterHP);
+
+        this.m_VirusMake = this.m_VirusMake.getComponent('VirusMask');
+        this.m_ClassArray.push(this.m_VirusMake);
+
 
         this.m_ClassArray.forEach(v => v.play && v.play());
 
@@ -154,6 +159,10 @@ cc.Class({
             let pos = this.m_airPlane.node.getPosition();
             pos.y += 116;
             bullteNode.setPosition(pos);
+            // pos.y += 100;
+            let js = bullteNode.getComponent('Bullet');
+            js.init();
+            js.setSecondPos(cc.v2(pos.x, pos.y + 80));
         } else { // 多个子弹时的位置显示
             let left = 1; // 左边显示几个子弹
             let right = 1;// 右边显示几个子弹
