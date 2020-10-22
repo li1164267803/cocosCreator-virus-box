@@ -1,5 +1,9 @@
 # 项目名称：消灭病毒 demo
 
+## 演示地址=>半成品 (๑ ￣ ̫ ￣ ๑)
+
+[https://www.lin2556.xyz/demo/web-mobile](https://www.lin2556.xyz/demo/web-mobile)
+
 ## 下载运行项目
 
 在 git clone 之后 => 进入到 virusProject 目录下
