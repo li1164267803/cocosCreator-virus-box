@@ -4,7 +4,7 @@
 
 **h5 半成品,受服务器和文件包影响,初次加载资源加载慢，请耐心等待**
 
-[https://www.lin2556.xyz/demo/web-mobile](https://www.lin2556.xyz/demo/web-mobile)
+[http://blog.fwhf.xyz/web-mobile/](http://blog.fwhf.xyz/web-mobile/)
 
 ## 下载运行项目
 
