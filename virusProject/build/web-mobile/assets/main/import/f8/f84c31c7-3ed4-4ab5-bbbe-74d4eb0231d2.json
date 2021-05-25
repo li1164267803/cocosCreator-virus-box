@@ -1,1 +1,28 @@
-{"__type__":"cc.SpriteFrame","content":{"name":"z4","texture":"14JXHCOqNBkax1DtuNW/mY","rect":[180,171,24,44],"offset":[0,0],"originalSize":[24,44],"rotated":1,"capInsets":[0,0,0,0]}}
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "z4",
+    "texture": "14JXHCOqNBkax1DtuNW/mY",
+    "rect": [
+      180,
+      171,
+      24,
+      44
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      24,
+      44
+    ],
+    "rotated": 1,
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

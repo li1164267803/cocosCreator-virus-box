@@ -1,1 +1,27 @@
-{"__type__":"cc.SpriteFrame","content":{"name":"Screenshot_2019-06-13-13-16-08","texture":"cchDipqX9OV6bPuoPeu2pT","rect":[0,0,900,1600],"offset":[0,0],"originalSize":[900,1600],"capInsets":[0,0,0,0]}}
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "Screenshot_2019-06-13-13-16-08",
+    "texture": "cchDipqX9OV6bPuoPeu2pT",
+    "rect": [
+      0,
+      0,
+      900,
+      1600
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      900,
+      1600
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

@@ -1,1 +1,27 @@
-{"__type__":"cc.SpriteFrame","content":{"name":"微信图片_20190621132415","texture":"e2Y/VfQIlLAJmho9JdSh4U","rect":[0,0,1080,1920],"offset":[0,0],"originalSize":[1080,1920],"capInsets":[0,0,0,0]}}
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "微信图片_20190621132415",
+    "texture": "e2Y/VfQIlLAJmho9JdSh4U",
+    "rect": [
+      0,
+      0,
+      1080,
+      1920
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      1080,
+      1920
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

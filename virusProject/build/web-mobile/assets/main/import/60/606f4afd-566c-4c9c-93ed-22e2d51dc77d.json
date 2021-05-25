@@ -1,1 +1,28 @@
-{"__type__":"cc.SpriteFrame","content":{"name":"xueTiao","texture":"14JXHCOqNBkax1DtuNW/mY","rect":[2,346,641,18],"offset":[0,0],"originalSize":[641,18],"rotated":1,"capInsets":[0,0,0,0]}}
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "xueTiao",
+    "texture": "14JXHCOqNBkax1DtuNW/mY",
+    "rect": [
+      2,
+      346,
+      641,
+      18
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      641,
+      18
+    ],
+    "rotated": 1,
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

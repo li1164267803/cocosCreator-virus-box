@@ -1,1 +1,27 @@
-{"__type__":"cc.SpriteFrame","content":{"name":"Jishen_W4","texture":"9a+ij0Dw1Ag7kHTs3aMK98","rect":[2,640,126,126],"offset":[0,0],"originalSize":[126,126],"capInsets":[0,0,0,0]}}
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "Jishen_W4",
+    "texture": "9a+ij0Dw1Ag7kHTs3aMK98",
+    "rect": [
+      2,
+      640,
+      126,
+      126
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      126,
+      126
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

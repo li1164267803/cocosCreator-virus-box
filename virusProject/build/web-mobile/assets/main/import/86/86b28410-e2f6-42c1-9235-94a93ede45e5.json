@@ -1,1 +1,27 @@
-{"__type__":"cc.SpriteFrame","content":{"name":"jitou2","texture":"9a+ij0Dw1Ag7kHTs3aMK98","rect":[391,112,97,89],"offset":[0,0],"originalSize":[97,89],"capInsets":[0,0,0,0]}}
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "jitou2",
+    "texture": "9a+ij0Dw1Ag7kHTs3aMK98",
+    "rect": [
+      391,
+      112,
+      97,
+      89
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      97,
+      89
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

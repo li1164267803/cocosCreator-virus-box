@@ -1,1 +1,28 @@
-{"__type__":"cc.SpriteFrame","content":{"name":"bY_1","texture":"14JXHCOqNBkax1DtuNW/mY","rect":[2,171,64,176],"offset":[0,-4],"originalSize":[84,184],"rotated":1,"capInsets":[24,26,24,35]}}
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "bY_1",
+    "texture": "14JXHCOqNBkax1DtuNW/mY",
+    "rect": [
+      2,
+      171,
+      64,
+      176
+    ],
+    "offset": [
+      0,
+      -4
+    ],
+    "originalSize": [
+      84,
+      184
+    ],
+    "rotated": 1,
+    "capInsets": [
+      24,
+      26,
+      24,
+      35
+    ]
+  }
+}

@@ -1,1 +1,87 @@
-{"__type__":"cc.AnimationClip","_name":"die","_duration":1,"sample":11,"curveData":{"comps":{"cc.Sprite":{"spriteFrame":[{"frame":0,"value":{"__uuid__":"53Y8hr9gpGUZN6t4pWpQ9L"}},{"frame":0.09090909090909091,"value":{"__uuid__":"04eSatM3RMLqp8hH3QHd/o"}},{"frame":0.18181818181818182,"value":{"__uuid__":"71CfRWRG5Dr5VcUmiU6HgJ"}},{"frame":0.2727272727272727,"value":{"__uuid__":"d05AIYBOJE67P4TpgkKXFM"}},{"frame":0.36363636363636365,"value":{"__uuid__":"11z1BkXjJGBbY9iroH09bv"}},{"frame":0.45454545454545453,"value":{"__uuid__":"3bAuGIYS1M2ql8nI3NFsIU"}},{"frame":0.5454545454545454,"value":{"__uuid__":"19yS1B6qxOLIbcavWC7Bik"}},{"frame":0.6363636363636364,"value":{"__uuid__":"1elF3R70FHmYI2pVHbk2Wf"}},{"frame":0.7272727272727273,"value":{"__uuid__":"10iGb5s+VNwp3mYbDixlcV"}},{"frame":0.8181818181818182,"value":{"__uuid__":"a6JpryhWVEarc/aqRP7ehc"}},{"frame":0.9090909090909091,"value":{"__uuid__":"c1A8svVt1NcLqjPxP2jqRc"}}]}}},"events":[{"frame":0.9090909090909091,"func":"playOver","params":[]}]}
+{
+  "__type__": "cc.AnimationClip",
+  "_name": "die",
+  "_duration": 1,
+  "sample": 11,
+  "curveData": {
+    "comps": {
+      "cc.Sprite": {
+        "spriteFrame": [
+          {
+            "frame": 0,
+            "value": {
+              "__uuid__": "53Y8hr9gpGUZN6t4pWpQ9L"
+            }
+          },
+          {
+            "frame": 0.09090909090909091,
+            "value": {
+              "__uuid__": "04eSatM3RMLqp8hH3QHd/o"
+            }
+          },
+          {
+            "frame": 0.18181818181818182,
+            "value": {
+              "__uuid__": "71CfRWRG5Dr5VcUmiU6HgJ"
+            }
+          },
+          {
+            "frame": 0.2727272727272727,
+            "value": {
+              "__uuid__": "d05AIYBOJE67P4TpgkKXFM"
+            }
+          },
+          {
+            "frame": 0.36363636363636365,
+            "value": {
+              "__uuid__": "11z1BkXjJGBbY9iroH09bv"
+            }
+          },
+          {
+            "frame": 0.45454545454545453,
+            "value": {
+              "__uuid__": "3bAuGIYS1M2ql8nI3NFsIU"
+            }
+          },
+          {
+            "frame": 0.5454545454545454,
+            "value": {
+              "__uuid__": "19yS1B6qxOLIbcavWC7Bik"
+            }
+          },
+          {
+            "frame": 0.6363636363636364,
+            "value": {
+              "__uuid__": "1elF3R70FHmYI2pVHbk2Wf"
+            }
+          },
+          {
+            "frame": 0.7272727272727273,
+            "value": {
+              "__uuid__": "10iGb5s+VNwp3mYbDixlcV"
+            }
+          },
+          {
+            "frame": 0.8181818181818182,
+            "value": {
+              "__uuid__": "a6JpryhWVEarc/aqRP7ehc"
+            }
+          },
+          {
+            "frame": 0.9090909090909091,
+            "value": {
+              "__uuid__": "c1A8svVt1NcLqjPxP2jqRc"
+            }
+          }
+        ]
+      }
+    }
+  },
+  "events": [
+    {
+      "frame": 0.9090909090909091,
+      "func": "playOver",
+      "params": []
+    }
+  ]
+}

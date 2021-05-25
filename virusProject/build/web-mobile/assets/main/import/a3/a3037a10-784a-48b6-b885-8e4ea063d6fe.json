@@ -1,1 +1,27 @@
-{"__type__":"cc.SpriteFrame","content":{"name":"jitou","texture":"9a+ij0Dw1Ag7kHTs3aMK98","rect":[391,2,108,108],"offset":[0,0],"originalSize":[108,108],"capInsets":[0,0,0,0]}}
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "jitou",
+    "texture": "9a+ij0Dw1Ag7kHTs3aMK98",
+    "rect": [
+      391,
+      2,
+      108,
+      108
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      108,
+      108
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

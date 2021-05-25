@@ -1,1 +1,83 @@
-[{"__type__":"cc.Prefab","_name":"dieAnim","data":{"__id__":1}},{"__type__":"cc.Node","_name":"die","_components":[{"__type__":"cc.Sprite","node":{"__id__":1},"_materials":[{"__uuid__":"ecpdLyjvZBwrvm+cedCcQy"}],"_spriteFrame":{"__uuid__":"04eSatM3RMLqp8hH3QHd/o"}},{"__type__":"231697imm1At5A2CgAdLWPe","node":{"__id__":1}},{"__type__":"cc.Animation","node":{"__id__":1},"_defaultClip":{"__uuid__":"4fRYNdUEhINq099l2K9jfB"},"_clips":[{"__uuid__":"4fRYNdUEhINq099l2K9jfB"}],"playOnLoad":true}],"_prefab":{"__type__":"cc.PrefabInfo","root":{"__id__":1},"asset":{"__uuid__":"f0/zr5jJFOqIiBQ2MNCJAN"},"fileId":"d9J5H1A01B2qtztgHLzbzf"},"_contentSize":{"__type__":"cc.Size","width":256,"height":256},"_trs":{"__type__":"TypedArray","ctor":"Float64Array","array":[0,0,0,0,0,0,1,1,1,1]},"_groupIndex":1,"groupIndex":1}]
+[
+  {
+    "__type__": "cc.Prefab",
+    "_name": "dieAnim",
+    "data": {
+      "__id__": 1
+    }
+  },
+  {
+    "__type__": "cc.Node",
+    "_name": "die",
+    "_components": [
+      {
+        "__type__": "cc.Sprite",
+        "node": {
+          "__id__": 1
+        },
+        "_materials": [
+          {
+            "__uuid__": "ecpdLyjvZBwrvm+cedCcQy"
+          }
+        ],
+        "_spriteFrame": {
+          "__uuid__": "04eSatM3RMLqp8hH3QHd/o"
+        }
+      },
+      {
+        "__type__": "231697imm1At5A2CgAdLWPe",
+        "node": {
+          "__id__": 1
+        }
+      },
+      {
+        "__type__": "cc.Animation",
+        "node": {
+          "__id__": 1
+        },
+        "_defaultClip": {
+          "__uuid__": "4fRYNdUEhINq099l2K9jfB"
+        },
+        "_clips": [
+          {
+            "__uuid__": "4fRYNdUEhINq099l2K9jfB"
+          }
+        ],
+        "playOnLoad": true
+      }
+    ],
+    "_prefab": {
+      "__type__": "cc.PrefabInfo",
+      "root": {
+        "__id__": 1
+      },
+      "asset": {
+        "__uuid__": "f0/zr5jJFOqIiBQ2MNCJAN"
+      },
+      "fileId": "d9J5H1A01B2qtztgHLzbzf"
+    },
+    "_contentSize": {
+      "__type__": "cc.Size",
+      "width": 256,
+      "height": 256
+    },
+    "_trs": {
+      "__type__": "TypedArray",
+      "ctor": "Float64Array",
+      "array": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        1,
+        1
+      ]
+    },
+    "_groupIndex": 1,
+    "groupIndex": 1
+  }
+]
