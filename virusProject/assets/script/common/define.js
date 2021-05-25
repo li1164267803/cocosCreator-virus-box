@@ -47,3 +47,11 @@ function setVirusColor(node, color) { // 设置病毒颜色
         });
     }
 }
+
+// 隐藏自定义cocos的进场景遮罩
+window.loadingBg = document.getElementById("loading-bg");
+cc.macro.ENABLE_TRANSPARENT_CANVAS = true; // 开启背景透明
+// 开启背景透明的时候打包后要在css去掉body的默认灰色背景并且设置Camera的background四个都为0
+cc.director.once(cc.Director.EVENT_AFTER_SCENE_LAUNCH, function () {
+  if (window.loadingBg) window.loadingBg.style.display = "none";
+});
