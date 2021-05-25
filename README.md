@@ -4,7 +4,7 @@
 
 **h5 半成品,受服务器和文件包影响,初次加载资源加载慢，请耐心等待**
 
-[http://blog.fwhf.xyz/web-mobile/](http://blog.fwhf.xyz/web-mobile/)
+[https://li1164267803.github.io/cocosCreator-virus-box/virusProject/build/web-mobile](https://li1164267803.github.io/cocosCreator-virus-box/virusProject/build/web-mobile)
 
 ## 下载运行项目
 
@@ -30,7 +30,7 @@ v2.4.0
 
 ## 打包 h5 之前的操作
 
-## 通过修改本地按照目录中的编辑器代码实现隐藏遮罩 v2.4.0 （在根本上解决问题）
+## 通过修改本地按照目录中的编辑器代码实现隐藏遮罩 v2.4.0
 
 - 修改 Cocos Creator 安装目录下，找到\resources\static\build-templates\web-mobile 文件夹
 - 有两个 template 文件夹，一个为开发模板，一个为生产模板，都需要改
