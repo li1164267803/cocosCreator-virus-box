@@ -2252,33 +2252,6 @@
   {
     "__type__": "cc.SpriteFrame",
     "content": {
-      "name": "微信图片_20190621132415",
-      "texture": "e2Y/VfQIlLAJmho9JdSh4U",
-      "rect": [
-        0,
-        0,
-        1080,
-        1920
-      ],
-      "offset": [
-        0,
-        0
-      ],
-      "originalSize": [
-        1080,
-        1920
-      ],
-      "capInsets": [
-        0,
-        0,
-        0,
-        0
-      ]
-    }
-  },
-  {
-    "__type__": "cc.SpriteFrame",
-    "content": {
       "name": "b7 (3)",
       "texture": "f4ceumGa9Ky5Yk7u93zNbd",
       "rect": [
@@ -2653,7 +2626,7 @@
           "__id__": 2
         },
         {
-          "__id__": 141
+          "__id__": 139
         }
       ],
       "_active": false,
@@ -2699,46 +2672,46 @@
             "__id__": 2
           },
           "logo": {
-            "__id__": 21
+            "__id__": 19
           },
           "levelDesign": {
-            "__id__": 35
+            "__id__": 33
           },
           "m_Top": {
-            "__id__": 78
+            "__id__": 76
           },
           "m_setting": {
-            "__id__": 113
+            "__id__": 111
           },
           "m_clackGet": {
-            "__id__": 103
+            "__id__": 101
           },
           "m_bottom": {
-            "__id__": 115
+            "__id__": 113
           },
           "m_tip": {
-            "__id__": 102
+            "__id__": 100
           },
           "m_Bg": {
             "__id__": 5
           },
           "m_airPlane": {
-            "__id__": 91
+            "__id__": 89
           },
           "m_goldPrafab": {
             "__uuid__": "28ZITiuJlEKYyoVvrD885R"
           },
           "m_TouchControl": {
-            "__id__": 76
+            "__id__": 74
           },
           "m_BulletPrefab": {
             "__uuid__": "9frG+FmE1NppvXMjO+paQs"
           },
           "m_MonsterHP": {
-            "__id__": 10
+            "__id__": 8
           },
           "m_VirusMake": {
-            "__id__": 8
+            "__id__": 6
           }
         },
         {
@@ -2800,7 +2773,7 @@
         "array": [
           0,
           0,
-          1385.640646055102,
+          506.40103017710925,
           0,
           0,
           0,
@@ -2825,43 +2798,37 @@
           "__id__": 6
         },
         {
-          "__id__": 7
-        },
-        {
           "__id__": 8
         },
         {
-          "__id__": 10
+          "__id__": 19
         },
         {
-          "__id__": 21
+          "__id__": 33
         },
         {
-          "__id__": 35
+          "__id__": 74
         },
         {
           "__id__": 76
         },
         {
-          "__id__": 78
+          "__id__": 89
         },
         {
-          "__id__": 91
+          "__id__": 100
         },
         {
-          "__id__": 102
+          "__id__": 101
         },
         {
-          "__id__": 103
+          "__id__": 111
         },
         {
           "__id__": 113
         },
         {
-          "__id__": 115
-        },
-        {
-          "__id__": 128
+          "__id__": 126
         }
       ],
       "_components": [
@@ -2953,114 +2920,20 @@
     },
     {
       "__type__": "cc.Node",
-      "_name": "Screenshot_2019-06-13-13-16-08",
-      "_objFlags": 512,
-      "_parent": {
-        "__id__": 4
-      },
-      "_active": false,
-      "_components": [
-        {
-          "__type__": "cc.Sprite",
-          "node": {
-            "__id__": 6
-          },
-          "_materials": [
-            {
-              "__uuid__": "ecpdLyjvZBwrvm+cedCcQy"
-            }
-          ],
-          "_spriteFrame": {
-            "__uuid__": "85Rybjg8pAiYKPldYKqrHA"
-          }
-        }
-      ],
-      "_opacity": 100,
-      "_contentSize": {
-        "__type__": "cc.Size",
-        "width": 900,
-        "height": 1600
-      },
-      "_trs": {
-        "__type__": "TypedArray",
-        "ctor": "Float64Array",
-        "array": [
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          1,
-          1,
-          1,
-          1
-        ]
-      }
-    },
-    {
-      "__type__": "cc.Node",
-      "_name": "微信图片_20190621132415",
-      "_parent": {
-        "__id__": 4
-      },
-      "_active": false,
-      "_components": [
-        {
-          "__type__": "cc.Sprite",
-          "node": {
-            "__id__": 7
-          },
-          "_materials": [
-            {
-              "__uuid__": "ecpdLyjvZBwrvm+cedCcQy"
-            }
-          ],
-          "_spriteFrame": {
-            "__uuid__": "52zcqyerNOBYd0CFSRqnHb"
-          },
-          "_sizeMode": 0
-        }
-      ],
-      "_opacity": 204.76500000000001,
-      "_contentSize": {
-        "__type__": "cc.Size",
-        "width": 900,
-        "height": 1600
-      },
-      "_trs": {
-        "__type__": "TypedArray",
-        "ctor": "Float64Array",
-        "array": [
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          1,
-          1,
-          1,
-          1
-        ]
-      }
-    },
-    {
-      "__type__": "cc.Node",
       "_name": "VirusMask",
       "_parent": {
         "__id__": 4
       },
       "_children": [
         {
-          "__id__": 9
+          "__id__": 7
         }
       ],
       "_components": [
         {
           "__type__": "05b6b+BHYZG2p2ovKmZJ4Yv",
           "node": {
-            "__id__": 8
+            "__id__": 6
           },
           "m_VirusPrefab": [
             {
@@ -3071,7 +2944,7 @@
             "__uuid__": "f0/zr5jJFOqIiBQ2MNCJAN"
           },
           "m_VirusParentl": {
-            "__id__": 9
+            "__id__": 7
           }
         }
       ],
@@ -3099,7 +2972,7 @@
       "__type__": "cc.Node",
       "_name": "VirusParent",
       "_parent": {
-        "__id__": 8
+        "__id__": 6
       },
       "_trs": {
         "__type__": "TypedArray",
@@ -3127,32 +3000,32 @@
       },
       "_children": [
         {
-          "__id__": 11
+          "__id__": 9
         },
         {
-          "__id__": 15
+          "__id__": 13
+        },
+        {
+          "__id__": 14
         },
         {
           "__id__": 16
-        },
-        {
-          "__id__": 18
         }
       ],
       "_components": [
         {
           "__type__": "f2e55NcQa1EOY3q+/q1C6sm",
           "node": {
-            "__id__": 10
+            "__id__": 8
           },
           "m_Gold": {
-            "__id__": 17
+            "__id__": 15
           },
           "m_tipVirus": {
-            "__id__": 20
+            "__id__": 18
           },
           "m_HpProgress": {
-            "__id__": 14
+            "__id__": 12
           }
         }
       ],
@@ -3178,18 +3051,18 @@
       "__type__": "cc.Node",
       "_name": "New ProgressBar",
       "_parent": {
-        "__id__": 10
+        "__id__": 8
       },
       "_children": [
         {
-          "__id__": 12
+          "__id__": 10
         }
       ],
       "_components": [
         {
           "__type__": "cc.Sprite",
           "node": {
-            "__id__": 11
+            "__id__": 9
           },
           "_materials": [
             {
@@ -3203,7 +3076,7 @@
           "_sizeMode": 0
         },
         {
-          "__id__": 14
+          "__id__": 12
         }
       ],
       "_contentSize": {
@@ -3233,11 +3106,11 @@
       "_name": "bar",
       "_objFlags": 512,
       "_parent": {
-        "__id__": 11
+        "__id__": 9
       },
       "_components": [
         {
-          "__id__": 13
+          "__id__": 11
         }
       ],
       "_contentSize": {
@@ -3269,7 +3142,7 @@
     {
       "__type__": "cc.Sprite",
       "node": {
-        "__id__": 12
+        "__id__": 10
       },
       "_materials": [
         {
@@ -3285,24 +3158,24 @@
     {
       "__type__": "cc.ProgressBar",
       "node": {
-        "__id__": 11
+        "__id__": 9
       },
       "_N$totalLength": 540,
       "_N$barSprite": {
-        "__id__": 13
+        "__id__": 11
       }
     },
     {
       "__type__": "cc.Node",
       "_name": "coin",
       "_parent": {
-        "__id__": 10
+        "__id__": 8
       },
       "_components": [
         {
           "__type__": "cc.Sprite",
           "node": {
-            "__id__": 15
+            "__id__": 13
           },
           "_materials": [
             {
@@ -3340,11 +3213,11 @@
       "__type__": "cc.Node",
       "_name": "Gold",
       "_parent": {
-        "__id__": 10
+        "__id__": 8
       },
       "_components": [
         {
-          "__id__": 17
+          "__id__": 15
         }
       ],
       "_contentSize": {
@@ -3376,7 +3249,7 @@
     {
       "__type__": "cc.Label",
       "node": {
-        "__id__": 16
+        "__id__": 14
       },
       "_materials": [
         {
@@ -3395,16 +3268,16 @@
       "__type__": "cc.Node",
       "_name": "Hp",
       "_parent": {
-        "__id__": 10
+        "__id__": 8
       },
       "_children": [
         {
-          "__id__": 19
+          "__id__": 17
         }
       ],
       "_components": [
         {
-          "__id__": 20
+          "__id__": 18
         }
       ],
       "_color": {
@@ -3443,13 +3316,13 @@
       "__type__": "cc.Node",
       "_name": "New Label",
       "_parent": {
-        "__id__": 18
+        "__id__": 16
       },
       "_components": [
         {
           "__type__": "cc.Label",
           "node": {
-            "__id__": 19
+            "__id__": 17
           },
           "_materials": [
             {
@@ -3496,7 +3369,7 @@
     {
       "__type__": "cc.Label",
       "node": {
-        "__id__": 18
+        "__id__": 16
       },
       "_materials": [
         {
@@ -3520,27 +3393,27 @@
       },
       "_children": [
         {
-          "__id__": 22
+          "__id__": 20
         }
       ],
       "_components": [
         {
           "__type__": "986e0AglIZOHaQt/1VYE2OL",
           "node": {
-            "__id__": 21
+            "__id__": 19
           },
           "Anim": [
-            {
-              "__id__": 25
-            },
             {
               "__id__": 23
             },
             {
-              "__id__": 26
+              "__id__": 21
             },
             {
-              "__id__": 30
+              "__id__": 24
+            },
+            {
+              "__id__": 28
             }
           ]
         }
@@ -3566,9 +3439,15 @@
       "__type__": "cc.Node",
       "_name": "logo_bg",
       "_parent": {
-        "__id__": 21
+        "__id__": 19
       },
       "_children": [
+        {
+          "__id__": 21
+        },
+        {
+          "__id__": 22
+        },
         {
           "__id__": 23
         },
@@ -3576,23 +3455,17 @@
           "__id__": 24
         },
         {
-          "__id__": 25
+          "__id__": 28
         },
         {
-          "__id__": 26
-        },
-        {
-          "__id__": 30
-        },
-        {
-          "__id__": 34
+          "__id__": 32
         }
       ],
       "_components": [
         {
           "__type__": "cc.Sprite",
           "node": {
-            "__id__": 22
+            "__id__": 20
           },
           "_materials": [
             {
@@ -3630,13 +3503,13 @@
       "__type__": "cc.Node",
       "_name": "1",
       "_parent": {
-        "__id__": 22
+        "__id__": 20
       },
       "_components": [
         {
           "__type__": "cc.Sprite",
           "node": {
-            "__id__": 23
+            "__id__": 21
           },
           "_materials": [
             {
@@ -3679,13 +3552,13 @@
       "__type__": "cc.Node",
       "_name": "bg",
       "_parent": {
-        "__id__": 22
+        "__id__": 20
       },
       "_components": [
         {
           "__type__": "cc.Sprite",
           "node": {
-            "__id__": 24
+            "__id__": 22
           },
           "_materials": [
             {
@@ -3723,13 +3596,13 @@
       "__type__": "cc.Node",
       "_name": "0",
       "_parent": {
-        "__id__": 22
+        "__id__": 20
       },
       "_components": [
         {
           "__type__": "cc.Sprite",
           "node": {
-            "__id__": 25
+            "__id__": 23
           },
           "_materials": [
             {
@@ -3767,33 +3640,33 @@
       "__type__": "cc.Node",
       "_name": "virus2",
       "_parent": {
-        "__id__": 22
+        "__id__": 20
       },
       "_children": [
         {
+          "__id__": 25
+        },
+        {
+          "__id__": 26
+        },
+        {
           "__id__": 27
-        },
-        {
-          "__id__": 28
-        },
-        {
-          "__id__": 29
         }
       ],
       "_components": [
         {
           "__type__": "baafbsCRGBBB7MJgN9odq6S",
           "node": {
-            "__id__": 26
+            "__id__": 24
           },
           "circl": {
-            "__id__": 28
+            "__id__": 26
           },
           "virus": {
-            "__id__": 27
+            "__id__": 25
           },
           "tail": {
-            "__id__": 29
+            "__id__": 27
           }
         }
       ],
@@ -3818,13 +3691,13 @@
       "__type__": "cc.Node",
       "_name": "virus",
       "_parent": {
-        "__id__": 26
+        "__id__": 24
       },
       "_components": [
         {
           "__type__": "cc.Sprite",
           "node": {
-            "__id__": 27
+            "__id__": 25
           },
           "_materials": [
             {
@@ -3862,13 +3735,13 @@
       "__type__": "cc.Node",
       "_name": "circle",
       "_parent": {
-        "__id__": 26
+        "__id__": 24
       },
       "_components": [
         {
           "__type__": "cc.Sprite",
           "node": {
-            "__id__": 28
+            "__id__": 26
           },
           "_materials": [
             {
@@ -3906,13 +3779,13 @@
       "__type__": "cc.Node",
       "_name": "tail",
       "_parent": {
-        "__id__": 26
+        "__id__": 24
       },
       "_components": [
         {
           "__type__": "cc.Sprite",
           "node": {
-            "__id__": 29
+            "__id__": 27
           },
           "_materials": [
             {
@@ -3950,33 +3823,33 @@
       "__type__": "cc.Node",
       "_name": "virus3",
       "_parent": {
-        "__id__": 22
+        "__id__": 20
       },
       "_children": [
         {
+          "__id__": 29
+        },
+        {
+          "__id__": 30
+        },
+        {
           "__id__": 31
-        },
-        {
-          "__id__": 32
-        },
-        {
-          "__id__": 33
         }
       ],
       "_components": [
         {
           "__type__": "baafbsCRGBBB7MJgN9odq6S",
           "node": {
-            "__id__": 30
+            "__id__": 28
           },
           "circl": {
-            "__id__": 32
+            "__id__": 30
           },
           "virus": {
-            "__id__": 31
+            "__id__": 29
           },
           "tail": {
-            "__id__": 33
+            "__id__": 31
           }
         }
       ],
@@ -4001,13 +3874,13 @@
       "__type__": "cc.Node",
       "_name": "virus",
       "_parent": {
-        "__id__": 30
+        "__id__": 28
       },
       "_components": [
         {
           "__type__": "cc.Sprite",
           "node": {
-            "__id__": 31
+            "__id__": 29
           },
           "_materials": [
             {
@@ -4045,13 +3918,13 @@
       "__type__": "cc.Node",
       "_name": "circle",
       "_parent": {
-        "__id__": 30
+        "__id__": 28
       },
       "_components": [
         {
           "__type__": "cc.Sprite",
           "node": {
-            "__id__": 32
+            "__id__": 30
           },
           "_materials": [
             {
@@ -4089,13 +3962,13 @@
       "__type__": "cc.Node",
       "_name": "tail",
       "_parent": {
-        "__id__": 30
+        "__id__": 28
       },
       "_components": [
         {
           "__type__": "cc.Sprite",
           "node": {
-            "__id__": 33
+            "__id__": 31
           },
           "_materials": [
             {
@@ -4133,13 +4006,13 @@
       "__type__": "cc.Node",
       "_name": "New Sprite(Splash)",
       "_parent": {
-        "__id__": 22
+        "__id__": 20
       },
       "_components": [
         {
           "__type__": "cc.Sprite",
           "node": {
-            "__id__": 34
+            "__id__": 32
           },
           "_enabled": false,
           "_materials": [
@@ -4186,42 +4059,42 @@
       },
       "_children": [
         {
-          "__id__": 36
+          "__id__": 34
         },
         {
-          "__id__": 44
+          "__id__": 42
         },
         {
-          "__id__": 52
+          "__id__": 50
         },
         {
-          "__id__": 60
+          "__id__": 58
         },
         {
-          "__id__": 68
+          "__id__": 66
         }
       ],
       "_components": [
         {
           "__type__": "03812rHpiNM2prn9hW/YNOF",
           "node": {
-            "__id__": 35
+            "__id__": 33
           },
           "item": [
             {
-              "__id__": 36
+              "__id__": 34
             },
             {
-              "__id__": 44
+              "__id__": 42
             },
             {
-              "__id__": 52
+              "__id__": 50
             },
             {
-              "__id__": 60
+              "__id__": 58
             },
             {
-              "__id__": 68
+              "__id__": 66
             }
           ]
         }
@@ -4247,40 +4120,40 @@
       "__type__": "cc.Node",
       "_name": "item0",
       "_parent": {
-        "__id__": 35
+        "__id__": 33
       },
       "_children": [
+        {
+          "__id__": 35
+        },
         {
           "__id__": 37
         },
         {
+          "__id__": 38
+        },
+        {
           "__id__": 39
-        },
-        {
-          "__id__": 40
-        },
-        {
-          "__id__": 41
         }
       ],
       "_components": [
         {
           "__type__": "d3b0ecfc9NBOLhld0nBM6qX",
           "node": {
-            "__id__": 36
+            "__id__": 34
           },
           "boss": {
-            "__id__": 40
+            "__id__": 38
           },
           "number": {
-            "__id__": 38
+            "__id__": 36
           },
           "point": [
             {
-              "__id__": 42
+              "__id__": 40
             },
             {
-              "__id__": 43
+              "__id__": 41
             }
           ]
         }
@@ -4306,11 +4179,11 @@
       "__type__": "cc.Node",
       "_name": "num",
       "_parent": {
-        "__id__": 36
+        "__id__": 34
       },
       "_components": [
         {
-          "__id__": 38
+          "__id__": 36
         }
       ],
       "_color": {
@@ -4344,7 +4217,7 @@
     {
       "__type__": "cc.Label",
       "node": {
-        "__id__": 37
+        "__id__": 35
       },
       "_materials": [
         {
@@ -4363,13 +4236,13 @@
       "__type__": "cc.Node",
       "_name": "bg",
       "_parent": {
-        "__id__": 36
+        "__id__": 34
       },
       "_components": [
         {
           "__type__": "cc.Sprite",
           "node": {
-            "__id__": 39
+            "__id__": 37
           },
           "_materials": [
             {
@@ -4407,13 +4280,13 @@
       "__type__": "cc.Node",
       "_name": "boss",
       "_parent": {
-        "__id__": 36
+        "__id__": 34
       },
       "_components": [
         {
           "__type__": "cc.Sprite",
           "node": {
-            "__id__": 40
+            "__id__": 38
           },
           "_materials": [
             {
@@ -4451,14 +4324,14 @@
       "__type__": "cc.Node",
       "_name": "point",
       "_parent": {
-        "__id__": 36
+        "__id__": 34
       },
       "_children": [
         {
-          "__id__": 42
+          "__id__": 40
         },
         {
-          "__id__": 43
+          "__id__": 41
         }
       ],
       "_trs": {
@@ -4482,13 +4355,13 @@
       "__type__": "cc.Node",
       "_name": "z4",
       "_parent": {
-        "__id__": 41
+        "__id__": 39
       },
       "_components": [
         {
           "__type__": "cc.Sprite",
           "node": {
-            "__id__": 42
+            "__id__": 40
           },
           "_materials": [
             {
@@ -4526,13 +4399,13 @@
       "__type__": "cc.Node",
       "_name": "z5",
       "_parent": {
-        "__id__": 41
+        "__id__": 39
       },
       "_components": [
         {
           "__type__": "cc.Sprite",
           "node": {
-            "__id__": 43
+            "__id__": 41
           },
           "_materials": [
             {
@@ -4570,40 +4443,40 @@
       "__type__": "cc.Node",
       "_name": "item1",
       "_parent": {
-        "__id__": 35
+        "__id__": 33
       },
       "_children": [
+        {
+          "__id__": 43
+        },
         {
           "__id__": 45
         },
         {
+          "__id__": 46
+        },
+        {
           "__id__": 47
-        },
-        {
-          "__id__": 48
-        },
-        {
-          "__id__": 49
         }
       ],
       "_components": [
         {
           "__type__": "d3b0ecfc9NBOLhld0nBM6qX",
           "node": {
-            "__id__": 44
+            "__id__": 42
           },
           "boss": {
-            "__id__": 48
+            "__id__": 46
           },
           "number": {
-            "__id__": 46
+            "__id__": 44
           },
           "point": [
             {
-              "__id__": 50
+              "__id__": 48
             },
             {
-              "__id__": 51
+              "__id__": 49
             }
           ]
         }
@@ -4629,11 +4502,11 @@
       "__type__": "cc.Node",
       "_name": "num",
       "_parent": {
-        "__id__": 44
+        "__id__": 42
       },
       "_components": [
         {
-          "__id__": 46
+          "__id__": 44
         }
       ],
       "_color": {
@@ -4667,7 +4540,7 @@
     {
       "__type__": "cc.Label",
       "node": {
-        "__id__": 45
+        "__id__": 43
       },
       "_materials": [
         {
@@ -4686,13 +4559,13 @@
       "__type__": "cc.Node",
       "_name": "bg",
       "_parent": {
-        "__id__": 44
+        "__id__": 42
       },
       "_components": [
         {
           "__type__": "cc.Sprite",
           "node": {
-            "__id__": 47
+            "__id__": 45
           },
           "_materials": [
             {
@@ -4730,13 +4603,13 @@
       "__type__": "cc.Node",
       "_name": "boss",
       "_parent": {
-        "__id__": 44
+        "__id__": 42
       },
       "_components": [
         {
           "__type__": "cc.Sprite",
           "node": {
-            "__id__": 48
+            "__id__": 46
           },
           "_materials": [
             {
@@ -4774,14 +4647,14 @@
       "__type__": "cc.Node",
       "_name": "point",
       "_parent": {
-        "__id__": 44
+        "__id__": 42
       },
       "_children": [
         {
-          "__id__": 50
+          "__id__": 48
         },
         {
-          "__id__": 51
+          "__id__": 49
         }
       ],
       "_trs": {
@@ -4805,13 +4678,13 @@
       "__type__": "cc.Node",
       "_name": "z4",
       "_parent": {
-        "__id__": 49
+        "__id__": 47
       },
       "_components": [
         {
           "__type__": "cc.Sprite",
           "node": {
-            "__id__": 50
+            "__id__": 48
           },
           "_materials": [
             {
@@ -4849,13 +4722,13 @@
       "__type__": "cc.Node",
       "_name": "z5",
       "_parent": {
-        "__id__": 49
+        "__id__": 47
       },
       "_components": [
         {
           "__type__": "cc.Sprite",
           "node": {
-            "__id__": 51
+            "__id__": 49
           },
           "_materials": [
             {
@@ -4893,40 +4766,40 @@
       "__type__": "cc.Node",
       "_name": "item2",
       "_parent": {
-        "__id__": 35
+        "__id__": 33
       },
       "_children": [
+        {
+          "__id__": 51
+        },
         {
           "__id__": 53
         },
         {
+          "__id__": 54
+        },
+        {
           "__id__": 55
-        },
-        {
-          "__id__": 56
-        },
-        {
-          "__id__": 57
         }
       ],
       "_components": [
         {
           "__type__": "d3b0ecfc9NBOLhld0nBM6qX",
           "node": {
-            "__id__": 52
+            "__id__": 50
           },
           "boss": {
-            "__id__": 56
+            "__id__": 54
           },
           "number": {
-            "__id__": 54
+            "__id__": 52
           },
           "point": [
             {
-              "__id__": 58
+              "__id__": 56
             },
             {
-              "__id__": 59
+              "__id__": 57
             }
           ]
         }
@@ -4952,11 +4825,11 @@
       "__type__": "cc.Node",
       "_name": "num",
       "_parent": {
-        "__id__": 52
+        "__id__": 50
       },
       "_components": [
         {
-          "__id__": 54
+          "__id__": 52
         }
       ],
       "_color": {
@@ -4990,7 +4863,7 @@
     {
       "__type__": "cc.Label",
       "node": {
-        "__id__": 53
+        "__id__": 51
       },
       "_materials": [
         {
@@ -5009,13 +4882,13 @@
       "__type__": "cc.Node",
       "_name": "bg",
       "_parent": {
-        "__id__": 52
+        "__id__": 50
       },
       "_components": [
         {
           "__type__": "cc.Sprite",
           "node": {
-            "__id__": 55
+            "__id__": 53
           },
           "_materials": [
             {
@@ -5053,13 +4926,13 @@
       "__type__": "cc.Node",
       "_name": "boss",
       "_parent": {
-        "__id__": 52
+        "__id__": 50
       },
       "_components": [
         {
           "__type__": "cc.Sprite",
           "node": {
-            "__id__": 56
+            "__id__": 54
           },
           "_materials": [
             {
@@ -5097,14 +4970,14 @@
       "__type__": "cc.Node",
       "_name": "point",
       "_parent": {
-        "__id__": 52
+        "__id__": 50
       },
       "_children": [
         {
-          "__id__": 58
+          "__id__": 56
         },
         {
-          "__id__": 59
+          "__id__": 57
         }
       ],
       "_trs": {
@@ -5128,13 +5001,13 @@
       "__type__": "cc.Node",
       "_name": "z4",
       "_parent": {
-        "__id__": 57
+        "__id__": 55
       },
       "_components": [
         {
           "__type__": "cc.Sprite",
           "node": {
-            "__id__": 58
+            "__id__": 56
           },
           "_materials": [
             {
@@ -5172,13 +5045,13 @@
       "__type__": "cc.Node",
       "_name": "z5",
       "_parent": {
-        "__id__": 57
+        "__id__": 55
       },
       "_components": [
         {
           "__type__": "cc.Sprite",
           "node": {
-            "__id__": 59
+            "__id__": 57
           },
           "_materials": [
             {
@@ -5216,40 +5089,40 @@
       "__type__": "cc.Node",
       "_name": "item3",
       "_parent": {
-        "__id__": 35
+        "__id__": 33
       },
       "_children": [
+        {
+          "__id__": 59
+        },
         {
           "__id__": 61
         },
         {
+          "__id__": 62
+        },
+        {
           "__id__": 63
-        },
-        {
-          "__id__": 64
-        },
-        {
-          "__id__": 65
         }
       ],
       "_components": [
         {
           "__type__": "d3b0ecfc9NBOLhld0nBM6qX",
           "node": {
-            "__id__": 60
+            "__id__": 58
           },
           "boss": {
-            "__id__": 64
+            "__id__": 62
           },
           "number": {
-            "__id__": 62
+            "__id__": 60
           },
           "point": [
             {
-              "__id__": 66
+              "__id__": 64
             },
             {
-              "__id__": 67
+              "__id__": 65
             }
           ]
         }
@@ -5275,11 +5148,11 @@
       "__type__": "cc.Node",
       "_name": "num",
       "_parent": {
-        "__id__": 60
+        "__id__": 58
       },
       "_components": [
         {
-          "__id__": 62
+          "__id__": 60
         }
       ],
       "_color": {
@@ -5313,7 +5186,7 @@
     {
       "__type__": "cc.Label",
       "node": {
-        "__id__": 61
+        "__id__": 59
       },
       "_materials": [
         {
@@ -5332,13 +5205,13 @@
       "__type__": "cc.Node",
       "_name": "bg",
       "_parent": {
-        "__id__": 60
+        "__id__": 58
       },
       "_components": [
         {
           "__type__": "cc.Sprite",
           "node": {
-            "__id__": 63
+            "__id__": 61
           },
           "_materials": [
             {
@@ -5376,13 +5249,13 @@
       "__type__": "cc.Node",
       "_name": "boss",
       "_parent": {
-        "__id__": 60
+        "__id__": 58
       },
       "_components": [
         {
           "__type__": "cc.Sprite",
           "node": {
-            "__id__": 64
+            "__id__": 62
           },
           "_materials": [
             {
@@ -5420,14 +5293,14 @@
       "__type__": "cc.Node",
       "_name": "point",
       "_parent": {
-        "__id__": 60
+        "__id__": 58
       },
       "_children": [
         {
-          "__id__": 66
+          "__id__": 64
         },
         {
-          "__id__": 67
+          "__id__": 65
         }
       ],
       "_trs": {
@@ -5451,13 +5324,13 @@
       "__type__": "cc.Node",
       "_name": "z4",
       "_parent": {
-        "__id__": 65
+        "__id__": 63
       },
       "_components": [
         {
           "__type__": "cc.Sprite",
           "node": {
-            "__id__": 66
+            "__id__": 64
           },
           "_materials": [
             {
@@ -5495,13 +5368,13 @@
       "__type__": "cc.Node",
       "_name": "z5",
       "_parent": {
-        "__id__": 65
+        "__id__": 63
       },
       "_components": [
         {
           "__type__": "cc.Sprite",
           "node": {
-            "__id__": 67
+            "__id__": 65
           },
           "_materials": [
             {
@@ -5539,40 +5412,40 @@
       "__type__": "cc.Node",
       "_name": "item4",
       "_parent": {
-        "__id__": 35
+        "__id__": 33
       },
       "_children": [
+        {
+          "__id__": 67
+        },
         {
           "__id__": 69
         },
         {
+          "__id__": 70
+        },
+        {
           "__id__": 71
-        },
-        {
-          "__id__": 72
-        },
-        {
-          "__id__": 73
         }
       ],
       "_components": [
         {
           "__type__": "d3b0ecfc9NBOLhld0nBM6qX",
           "node": {
-            "__id__": 68
+            "__id__": 66
           },
           "boss": {
-            "__id__": 72
+            "__id__": 70
           },
           "number": {
-            "__id__": 70
+            "__id__": 68
           },
           "point": [
             {
-              "__id__": 74
+              "__id__": 72
             },
             {
-              "__id__": 75
+              "__id__": 73
             }
           ]
         }
@@ -5598,11 +5471,11 @@
       "__type__": "cc.Node",
       "_name": "num",
       "_parent": {
-        "__id__": 68
+        "__id__": 66
       },
       "_components": [
         {
-          "__id__": 70
+          "__id__": 68
         }
       ],
       "_color": {
@@ -5636,7 +5509,7 @@
     {
       "__type__": "cc.Label",
       "node": {
-        "__id__": 69
+        "__id__": 67
       },
       "_materials": [
         {
@@ -5655,13 +5528,13 @@
       "__type__": "cc.Node",
       "_name": "bg",
       "_parent": {
-        "__id__": 68
+        "__id__": 66
       },
       "_components": [
         {
           "__type__": "cc.Sprite",
           "node": {
-            "__id__": 71
+            "__id__": 69
           },
           "_materials": [
             {
@@ -5699,13 +5572,13 @@
       "__type__": "cc.Node",
       "_name": "boss",
       "_parent": {
-        "__id__": 68
+        "__id__": 66
       },
       "_components": [
         {
           "__type__": "cc.Sprite",
           "node": {
-            "__id__": 72
+            "__id__": 70
           },
           "_materials": [
             {
@@ -5743,14 +5616,14 @@
       "__type__": "cc.Node",
       "_name": "point",
       "_parent": {
-        "__id__": 68
+        "__id__": 66
       },
       "_children": [
         {
-          "__id__": 74
+          "__id__": 72
         },
         {
-          "__id__": 75
+          "__id__": 73
         }
       ],
       "_trs": {
@@ -5774,13 +5647,13 @@
       "__type__": "cc.Node",
       "_name": "z4",
       "_parent": {
-        "__id__": 73
+        "__id__": 71
       },
       "_components": [
         {
           "__type__": "cc.Sprite",
           "node": {
-            "__id__": 74
+            "__id__": 72
           },
           "_materials": [
             {
@@ -5818,13 +5691,13 @@
       "__type__": "cc.Node",
       "_name": "z5",
       "_parent": {
-        "__id__": 73
+        "__id__": 71
       },
       "_components": [
         {
           "__type__": "cc.Sprite",
           "node": {
-            "__id__": 75
+            "__id__": 73
           },
           "_materials": [
             {
@@ -5867,17 +5740,17 @@
       },
       "_children": [
         {
-          "__id__": 77
+          "__id__": 75
         }
       ],
       "_components": [
         {
           "__type__": "9d0e6UfwVtL8aoT6t8md4kS",
           "node": {
-            "__id__": 76
+            "__id__": 74
           },
           "m_BG": {
-            "__id__": 77
+            "__id__": 75
           }
         }
       ],
@@ -5907,13 +5780,13 @@
       "__type__": "cc.Node",
       "_name": "bg",
       "_parent": {
-        "__id__": 76
+        "__id__": 74
       },
       "_components": [
         {
           "__type__": "cc.Sprite",
           "node": {
-            "__id__": 77
+            "__id__": 75
           },
           "_materials": [
             {
@@ -5958,13 +5831,16 @@
       },
       "_children": [
         {
+          "__id__": 77
+        },
+        {
+          "__id__": 78
+        },
+        {
           "__id__": 79
         },
         {
           "__id__": 80
-        },
-        {
-          "__id__": 81
         },
         {
           "__id__": 82
@@ -5976,26 +5852,23 @@
           "__id__": 86
         },
         {
+          "__id__": 87
+        },
+        {
           "__id__": 88
-        },
-        {
-          "__id__": 89
-        },
-        {
-          "__id__": 90
         }
       ],
       "_components": [
         {
           "__type__": "2ae2fZcZWBB3Lm506cAhdki",
           "node": {
-            "__id__": 78
+            "__id__": 76
           },
           "m_GoldNode": {
-            "__id__": 81
+            "__id__": 79
           },
           "m_labGold": {
-            "__id__": 83
+            "__id__": 81
           }
         }
       ],
@@ -6020,13 +5893,13 @@
       "__type__": "cc.Node",
       "_name": "tl2",
       "_parent": {
-        "__id__": 78
+        "__id__": 76
       },
       "_components": [
         {
           "__type__": "cc.Sprite",
           "node": {
-            "__id__": 79
+            "__id__": 77
           },
           "_materials": [
             {
@@ -6064,13 +5937,13 @@
       "__type__": "cc.Node",
       "_name": "ictili1",
       "_parent": {
-        "__id__": 78
+        "__id__": 76
       },
       "_components": [
         {
           "__type__": "cc.Sprite",
           "node": {
-            "__id__": 80
+            "__id__": 78
           },
           "_materials": [
             {
@@ -6108,13 +5981,13 @@
       "__type__": "cc.Node",
       "_name": "coin",
       "_parent": {
-        "__id__": 78
+        "__id__": 76
       },
       "_components": [
         {
           "__type__": "cc.Sprite",
           "node": {
-            "__id__": 81
+            "__id__": 79
           },
           "_materials": [
             {
@@ -6152,11 +6025,11 @@
       "__type__": "cc.Node",
       "_name": "labGold",
       "_parent": {
-        "__id__": 78
+        "__id__": 76
       },
       "_components": [
         {
-          "__id__": 83
+          "__id__": 81
         }
       ],
       "_contentSize": {
@@ -6184,7 +6057,7 @@
     {
       "__type__": "cc.Label",
       "node": {
-        "__id__": 82
+        "__id__": 80
       },
       "_materials": [
         {
@@ -6203,7 +6076,148 @@
       "__type__": "cc.Node",
       "_name": "btGold",
       "_parent": {
-        "__id__": 78
+        "__id__": 76
+      },
+      "_children": [
+        {
+          "__id__": 83
+        }
+      ],
+      "_components": [
+        {
+          "__type__": "cc.Button",
+          "node": {
+            "__id__": 82
+          },
+          "_N$transition": 3,
+          "transition": 3,
+          "_N$pressedColor": {
+            "__type__": "cc.Color",
+            "r": 177,
+            "g": 177,
+            "b": 177
+          },
+          "pressedColor": {
+            "__type__": "cc.Color",
+            "r": 177,
+            "g": 177,
+            "b": 177
+          },
+          "_N$disabledColor": {
+            "__type__": "cc.Color",
+            "r": 82,
+            "g": 82,
+            "b": 82
+          },
+          "_N$normalSprite": {
+            "__uuid__": "9bNi3YE0VN5pxMP5Eg6Upm"
+          },
+          "_N$pressedSprite": {
+            "__uuid__": "9bNi3YE0VN5pxMP5Eg6Upm"
+          },
+          "pressedSprite": {
+            "__uuid__": "9bNi3YE0VN5pxMP5Eg6Upm"
+          },
+          "_N$hoverSprite": {
+            "__uuid__": "9bNi3YE0VN5pxMP5Eg6Upm"
+          },
+          "hoverSprite": {
+            "__uuid__": "9bNi3YE0VN5pxMP5Eg6Upm"
+          },
+          "_N$disabledSprite": {
+            "__uuid__": "9bNi3YE0VN5pxMP5Eg6Upm"
+          },
+          "_N$target": {
+            "__id__": 83
+          }
+        }
+      ],
+      "_contentSize": {
+        "__type__": "cc.Size",
+        "width": 100,
+        "height": 40
+      },
+      "_trs": {
+        "__type__": "TypedArray",
+        "ctor": "Float64Array",
+        "array": [
+          -283,
+          4,
+          0,
+          0,
+          0,
+          0,
+          1,
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "__type__": "cc.Node",
+      "_name": "Background",
+      "_parent": {
+        "__id__": 82
+      },
+      "_components": [
+        {
+          "__type__": "cc.Sprite",
+          "node": {
+            "__id__": 83
+          },
+          "_materials": [
+            {
+              "__uuid__": "ecpdLyjvZBwrvm+cedCcQy"
+            }
+          ],
+          "_spriteFrame": {
+            "__uuid__": "9bNi3YE0VN5pxMP5Eg6Upm"
+          },
+          "_sizeMode": 0
+        },
+        {
+          "__type__": "cc.Widget",
+          "node": {
+            "__id__": 83
+          },
+          "alignMode": 0,
+          "_alignFlags": 45,
+          "_left": 26.9,
+          "_right": 28.1,
+          "_top": 3.900000000000002,
+          "_bottom": -8.900000000000002,
+          "_originalWidth": 100,
+          "_originalHeight": 40
+        }
+      ],
+      "_contentSize": {
+        "__type__": "cc.Size",
+        "width": 45,
+        "height": 45
+      },
+      "_trs": {
+        "__type__": "TypedArray",
+        "ctor": "Float64Array",
+        "array": [
+          -0.6000000000000014,
+          -6.400000000000002,
+          0,
+          0,
+          0,
+          0,
+          1,
+          1,
+          1,
+          0
+        ]
+      }
+    },
+    {
+      "__type__": "cc.Node",
+      "_name": "btLightning",
+      "_parent": {
+        "__id__": 76
       },
       "_children": [
         {
@@ -6268,8 +6282,8 @@
         "__type__": "TypedArray",
         "ctor": "Float64Array",
         "array": [
-          -283,
-          4,
+          -80.393,
+          5,
           0,
           0,
           0,
@@ -6342,156 +6356,15 @@
     },
     {
       "__type__": "cc.Node",
-      "_name": "btLightning",
-      "_parent": {
-        "__id__": 78
-      },
-      "_children": [
-        {
-          "__id__": 87
-        }
-      ],
-      "_components": [
-        {
-          "__type__": "cc.Button",
-          "node": {
-            "__id__": 86
-          },
-          "_N$transition": 3,
-          "transition": 3,
-          "_N$pressedColor": {
-            "__type__": "cc.Color",
-            "r": 177,
-            "g": 177,
-            "b": 177
-          },
-          "pressedColor": {
-            "__type__": "cc.Color",
-            "r": 177,
-            "g": 177,
-            "b": 177
-          },
-          "_N$disabledColor": {
-            "__type__": "cc.Color",
-            "r": 82,
-            "g": 82,
-            "b": 82
-          },
-          "_N$normalSprite": {
-            "__uuid__": "9bNi3YE0VN5pxMP5Eg6Upm"
-          },
-          "_N$pressedSprite": {
-            "__uuid__": "9bNi3YE0VN5pxMP5Eg6Upm"
-          },
-          "pressedSprite": {
-            "__uuid__": "9bNi3YE0VN5pxMP5Eg6Upm"
-          },
-          "_N$hoverSprite": {
-            "__uuid__": "9bNi3YE0VN5pxMP5Eg6Upm"
-          },
-          "hoverSprite": {
-            "__uuid__": "9bNi3YE0VN5pxMP5Eg6Upm"
-          },
-          "_N$disabledSprite": {
-            "__uuid__": "9bNi3YE0VN5pxMP5Eg6Upm"
-          },
-          "_N$target": {
-            "__id__": 87
-          }
-        }
-      ],
-      "_contentSize": {
-        "__type__": "cc.Size",
-        "width": 100,
-        "height": 40
-      },
-      "_trs": {
-        "__type__": "TypedArray",
-        "ctor": "Float64Array",
-        "array": [
-          -80.393,
-          5,
-          0,
-          0,
-          0,
-          0,
-          1,
-          1,
-          1,
-          1
-        ]
-      }
-    },
-    {
-      "__type__": "cc.Node",
-      "_name": "Background",
-      "_parent": {
-        "__id__": 86
-      },
-      "_components": [
-        {
-          "__type__": "cc.Sprite",
-          "node": {
-            "__id__": 87
-          },
-          "_materials": [
-            {
-              "__uuid__": "ecpdLyjvZBwrvm+cedCcQy"
-            }
-          ],
-          "_spriteFrame": {
-            "__uuid__": "9bNi3YE0VN5pxMP5Eg6Upm"
-          },
-          "_sizeMode": 0
-        },
-        {
-          "__type__": "cc.Widget",
-          "node": {
-            "__id__": 87
-          },
-          "alignMode": 0,
-          "_alignFlags": 45,
-          "_left": 26.9,
-          "_right": 28.1,
-          "_top": 3.900000000000002,
-          "_bottom": -8.900000000000002,
-          "_originalWidth": 100,
-          "_originalHeight": 40
-        }
-      ],
-      "_contentSize": {
-        "__type__": "cc.Size",
-        "width": 45,
-        "height": 45
-      },
-      "_trs": {
-        "__type__": "TypedArray",
-        "ctor": "Float64Array",
-        "array": [
-          -0.6000000000000014,
-          -6.400000000000002,
-          0,
-          0,
-          0,
-          0,
-          1,
-          1,
-          1,
-          0
-        ]
-      }
-    },
-    {
-      "__type__": "cc.Node",
       "_name": "labLightning",
       "_parent": {
-        "__id__": 78
+        "__id__": 76
       },
       "_components": [
         {
           "__type__": "cc.Label",
           "node": {
-            "__id__": 88
+            "__id__": 86
           },
           "_materials": [
             {
@@ -6533,13 +6406,13 @@
       "__type__": "cc.Node",
       "_name": "iczuan1",
       "_parent": {
-        "__id__": 78
+        "__id__": 76
       },
       "_components": [
         {
           "__type__": "cc.Sprite",
           "node": {
-            "__id__": 89
+            "__id__": 87
           },
           "_materials": [
             {
@@ -6577,13 +6450,13 @@
       "__type__": "cc.Node",
       "_name": "labScore",
       "_parent": {
-        "__id__": 78
+        "__id__": 76
       },
       "_components": [
         {
           "__type__": "cc.Label",
           "node": {
-            "__id__": 90
+            "__id__": 88
           },
           "_materials": [
             {
@@ -6630,10 +6503,16 @@
       },
       "_children": [
         {
-          "__id__": 92
+          "__id__": 90
         },
         {
-          "__id__": 93
+          "__id__": 91
+        },
+        {
+          "__id__": 95
+        },
+        {
+          "__id__": 96
         },
         {
           "__id__": 97
@@ -6643,42 +6522,36 @@
         },
         {
           "__id__": 99
-        },
-        {
-          "__id__": 100
-        },
-        {
-          "__id__": 101
         }
       ],
       "_components": [
         {
           "__type__": "a7eec2xdqVLYpZvZ8AI9iDz",
           "node": {
-            "__id__": 91
+            "__id__": 89
           }
         },
         {
           "__type__": "72d16qGLLJNGoSVDwBmw3k3",
           "node": {
-            "__id__": 91
+            "__id__": 89
           },
           "m_light": [
             {
+              "__id__": 92
+            },
+            {
+              "__id__": 93
+            },
+            {
               "__id__": 94
-            },
-            {
-              "__id__": 95
-            },
-            {
-              "__id__": 96
             }
           ],
           "m_TailLight": {
-            "__id__": 97
+            "__id__": 95
           },
           "m_Gun": {
-            "__id__": 101
+            "__id__": 99
           }
         }
       ],
@@ -6703,13 +6576,13 @@
       "__type__": "cc.Node",
       "_name": "jitou",
       "_parent": {
-        "__id__": 91
+        "__id__": 89
       },
       "_components": [
         {
           "__type__": "cc.Sprite",
           "node": {
-            "__id__": 92
+            "__id__": 90
           },
           "_materials": [
             {
@@ -6747,17 +6620,17 @@
       "__type__": "cc.Node",
       "_name": "Light",
       "_parent": {
-        "__id__": 91
+        "__id__": 89
       },
       "_children": [
         {
+          "__id__": 92
+        },
+        {
+          "__id__": 93
+        },
+        {
           "__id__": 94
-        },
-        {
-          "__id__": 95
-        },
-        {
-          "__id__": 96
         }
       ],
       "_trs": {
@@ -6781,7 +6654,95 @@
       "__type__": "cc.Node",
       "_name": "dot_wave0",
       "_parent": {
-        "__id__": 93
+        "__id__": 91
+      },
+      "_components": [
+        {
+          "__type__": "cc.Sprite",
+          "node": {
+            "__id__": 92
+          },
+          "_materials": [
+            {
+              "__uuid__": "ecpdLyjvZBwrvm+cedCcQy"
+            }
+          ],
+          "_spriteFrame": {
+            "__uuid__": "94E2O49bxAz6B6fJq3/dxA"
+          }
+        }
+      ],
+      "_contentSize": {
+        "__type__": "cc.Size",
+        "width": 89,
+        "height": 89
+      },
+      "_trs": {
+        "__type__": "TypedArray",
+        "ctor": "Float64Array",
+        "array": [
+          0,
+          71,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          1
+        ]
+      }
+    },
+    {
+      "__type__": "cc.Node",
+      "_name": "dot_wave1",
+      "_parent": {
+        "__id__": 91
+      },
+      "_components": [
+        {
+          "__type__": "cc.Sprite",
+          "node": {
+            "__id__": 93
+          },
+          "_materials": [
+            {
+              "__uuid__": "ecpdLyjvZBwrvm+cedCcQy"
+            }
+          ],
+          "_spriteFrame": {
+            "__uuid__": "94E2O49bxAz6B6fJq3/dxA"
+          }
+        }
+      ],
+      "_contentSize": {
+        "__type__": "cc.Size",
+        "width": 89,
+        "height": 89
+      },
+      "_trs": {
+        "__type__": "TypedArray",
+        "ctor": "Float64Array",
+        "array": [
+          0,
+          71,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          1
+        ]
+      }
+    },
+    {
+      "__type__": "cc.Node",
+      "_name": "dot_wave2",
+      "_parent": {
+        "__id__": 91
       },
       "_components": [
         {
@@ -6823,9 +6784,9 @@
     },
     {
       "__type__": "cc.Node",
-      "_name": "dot_wave1",
+      "_name": "TailLight",
       "_parent": {
-        "__id__": 93
+        "__id__": 89
       },
       "_components": [
         {
@@ -6839,101 +6800,13 @@
             }
           ],
           "_spriteFrame": {
-            "__uuid__": "94E2O49bxAz6B6fJq3/dxA"
-          }
-        }
-      ],
-      "_contentSize": {
-        "__type__": "cc.Size",
-        "width": 89,
-        "height": 89
-      },
-      "_trs": {
-        "__type__": "TypedArray",
-        "ctor": "Float64Array",
-        "array": [
-          0,
-          71,
-          0,
-          0,
-          0,
-          0,
-          1,
-          0,
-          0,
-          1
-        ]
-      }
-    },
-    {
-      "__type__": "cc.Node",
-      "_name": "dot_wave2",
-      "_parent": {
-        "__id__": 93
-      },
-      "_components": [
-        {
-          "__type__": "cc.Sprite",
-          "node": {
-            "__id__": 96
-          },
-          "_materials": [
-            {
-              "__uuid__": "ecpdLyjvZBwrvm+cedCcQy"
-            }
-          ],
-          "_spriteFrame": {
-            "__uuid__": "94E2O49bxAz6B6fJq3/dxA"
-          }
-        }
-      ],
-      "_contentSize": {
-        "__type__": "cc.Size",
-        "width": 89,
-        "height": 89
-      },
-      "_trs": {
-        "__type__": "TypedArray",
-        "ctor": "Float64Array",
-        "array": [
-          0,
-          71,
-          0,
-          0,
-          0,
-          0,
-          1,
-          0,
-          0,
-          1
-        ]
-      }
-    },
-    {
-      "__type__": "cc.Node",
-      "_name": "TailLight",
-      "_parent": {
-        "__id__": 91
-      },
-      "_components": [
-        {
-          "__type__": "cc.Sprite",
-          "node": {
-            "__id__": 97
-          },
-          "_materials": [
-            {
-              "__uuid__": "ecpdLyjvZBwrvm+cedCcQy"
-            }
-          ],
-          "_spriteFrame": {
             "__uuid__": "d4tmKiEcdAeISPOgrZ2lCA"
           }
         },
         {
           "__type__": "cc.Animation",
           "node": {
-            "__id__": 97
+            "__id__": 95
           },
           "_defaultClip": {
             "__uuid__": "89vqFuJZVGJ5aMp6XBut9m"
@@ -6977,13 +6850,13 @@
       "__type__": "cc.Node",
       "_name": "jishen",
       "_parent": {
-        "__id__": 91
+        "__id__": 89
       },
       "_components": [
         {
           "__type__": "cc.Sprite",
           "node": {
-            "__id__": 98
+            "__id__": 96
           },
           "_materials": [
             {
@@ -7021,13 +6894,13 @@
       "__type__": "cc.Node",
       "_name": "leftWing",
       "_parent": {
-        "__id__": 91
+        "__id__": 89
       },
       "_components": [
         {
           "__type__": "cc.Sprite",
           "node": {
-            "__id__": 99
+            "__id__": 97
           },
           "_materials": [
             {
@@ -7065,13 +6938,13 @@
       "__type__": "cc.Node",
       "_name": "rightWing",
       "_parent": {
-        "__id__": 91
+        "__id__": 89
       },
       "_components": [
         {
           "__type__": "cc.Sprite",
           "node": {
-            "__id__": 100
+            "__id__": 98
           },
           "_materials": [
             {
@@ -7109,13 +6982,13 @@
       "__type__": "cc.Node",
       "_name": "gun",
       "_parent": {
-        "__id__": 91
+        "__id__": 89
       },
       "_components": [
         {
           "__type__": "cc.Sprite",
           "node": {
-            "__id__": 101
+            "__id__": 99
           },
           "_materials": [
             {
@@ -7129,7 +7002,7 @@
         {
           "__type__": "29eccOhGdJOJaGreQH0Wb0v",
           "node": {
-            "__id__": 101
+            "__id__": 99
           }
         }
       ],
@@ -7166,7 +7039,7 @@
         {
           "__type__": "cc.Label",
           "node": {
-            "__id__": 102
+            "__id__": 100
           },
           "_materials": [
             {
@@ -7185,7 +7058,7 @@
         {
           "__type__": "17f0b3MqWRFFpclM/tIL7lz",
           "node": {
-            "__id__": 102
+            "__id__": 100
           }
         }
       ],
@@ -7219,47 +7092,47 @@
       },
       "_children": [
         {
+          "__id__": 102
+        },
+        {
+          "__id__": 103
+        },
+        {
           "__id__": 104
         },
         {
           "__id__": 105
         },
         {
-          "__id__": 106
-        },
-        {
-          "__id__": 107
+          "__id__": 108
         },
         {
           "__id__": 110
-        },
-        {
-          "__id__": 112
         }
       ],
       "_components": [
         {
           "__type__": "afd6d4fkdROfa4Fq/PGcKf8",
           "node": {
-            "__id__": 103
+            "__id__": 101
           },
           "m_labGold": {
-            "__id__": 111
+            "__id__": 109
           },
           "m_progress": {
-            "__id__": 109
+            "__id__": 107
           }
         },
         {
           "__type__": "cc.Button",
           "node": {
-            "__id__": 103
+            "__id__": 101
           },
           "clickEvents": [
             {
               "__type__": "cc.ClickEvent",
               "target": {
-                "__id__": 103
+                "__id__": 101
               },
               "_componentId": "afd6d4fkdROfa4Fq/PGcKf8",
               "handler": "onClickGet"
@@ -7268,7 +7141,7 @@
           "_N$transition": 3,
           "transition": 3,
           "_N$target": {
-            "__id__": 103
+            "__id__": 101
           }
         }
       ],
@@ -7298,13 +7171,13 @@
       "__type__": "cc.Node",
       "_name": "bor2",
       "_parent": {
-        "__id__": 103
+        "__id__": 101
       },
       "_components": [
         {
           "__type__": "cc.Sprite",
           "node": {
-            "__id__": 104
+            "__id__": 102
           },
           "_materials": [
             {
@@ -7346,13 +7219,13 @@
       "__type__": "cc.Node",
       "_name": "bor1",
       "_parent": {
-        "__id__": 103
+        "__id__": 101
       },
       "_components": [
         {
           "__type__": "cc.Sprite",
           "node": {
-            "__id__": 105
+            "__id__": 103
           },
           "_materials": [
             {
@@ -7390,13 +7263,13 @@
       "__type__": "cc.Node",
       "_name": "coin",
       "_parent": {
-        "__id__": 103
+        "__id__": 101
       },
       "_components": [
         {
           "__type__": "cc.Sprite",
           "node": {
-            "__id__": 106
+            "__id__": 104
           },
           "_materials": [
             {
@@ -7434,14 +7307,14 @@
       "__type__": "cc.Node",
       "_name": "coinLight",
       "_parent": {
-        "__id__": 103
+        "__id__": 101
       },
       "_components": [
         {
-          "__id__": 108
+          "__id__": 106
         },
         {
-          "__id__": 109
+          "__id__": 107
         }
       ],
       "_contentSize": {
@@ -7469,7 +7342,7 @@
     {
       "__type__": "cc.Sprite",
       "node": {
-        "__id__": 107
+        "__id__": 105
       },
       "_materials": [
         {
@@ -7492,10 +7365,10 @@
     {
       "__type__": "cc.ProgressBar",
       "node": {
-        "__id__": 107
+        "__id__": 105
       },
       "_N$barSprite": {
-        "__id__": 108
+        "__id__": 106
       },
       "_N$mode": 2,
       "_N$progress": 0.7,
@@ -7505,11 +7378,11 @@
       "__type__": "cc.Node",
       "_name": "New Label",
       "_parent": {
-        "__id__": 103
+        "__id__": 101
       },
       "_components": [
         {
-          "__id__": 111
+          "__id__": 109
         }
       ],
       "_contentSize": {
@@ -7537,7 +7410,7 @@
     {
       "__type__": "cc.Label",
       "node": {
-        "__id__": 110
+        "__id__": 108
       },
       "_materials": [
         {
@@ -7556,13 +7429,13 @@
       "__type__": "cc.Node",
       "_name": "New Label",
       "_parent": {
-        "__id__": 103
+        "__id__": 101
       },
       "_components": [
         {
           "__type__": "cc.Label",
           "node": {
-            "__id__": 112
+            "__id__": 110
           },
           "_materials": [
             {
@@ -7609,14 +7482,14 @@
       },
       "_children": [
         {
-          "__id__": 114
+          "__id__": 112
         }
       ],
       "_components": [
         {
           "__type__": "63e4dZD0LBCsZ+91ec5mzyj",
           "node": {
-            "__id__": 113
+            "__id__": 111
           }
         }
       ],
@@ -7641,13 +7514,13 @@
       "__type__": "cc.Node",
       "_name": "blackBg",
       "_parent": {
-        "__id__": 113
+        "__id__": 111
       },
       "_components": [
         {
           "__type__": "cc.Sprite",
           "node": {
-            "__id__": 114
+            "__id__": 112
           },
           "_materials": [
             {
@@ -7691,20 +7564,20 @@
       },
       "_children": [
         {
-          "__id__": 116
+          "__id__": 114
         },
         {
-          "__id__": 120
+          "__id__": 118
         },
         {
-          "__id__": 124
+          "__id__": 122
         }
       ],
       "_components": [
         {
           "__type__": "baf6d7huEpFgIhBbyOLocHC",
           "node": {
-            "__id__": 115
+            "__id__": 113
           }
         }
       ],
@@ -7729,17 +7602,17 @@
       "__type__": "cc.Node",
       "_name": "Weapon",
       "_parent": {
-        "__id__": 115
+        "__id__": 113
       },
       "_children": [
         {
+          "__id__": 115
+        },
+        {
+          "__id__": 116
+        },
+        {
           "__id__": 117
-        },
-        {
-          "__id__": 118
-        },
-        {
-          "__id__": 119
         }
       ],
       "_trs": {
@@ -7763,13 +7636,13 @@
       "__type__": "cc.Node",
       "_name": "bB_1",
       "_parent": {
-        "__id__": 116
+        "__id__": 114
       },
       "_components": [
         {
           "__type__": "cc.Sprite",
           "node": {
-            "__id__": 117
+            "__id__": 115
           },
           "_materials": [
             {
@@ -7809,13 +7682,13 @@
       "__type__": "cc.Node",
       "_name": "icmain",
       "_parent": {
-        "__id__": 116
+        "__id__": 114
       },
       "_components": [
         {
           "__type__": "cc.Sprite",
           "node": {
-            "__id__": 118
+            "__id__": 116
           },
           "_materials": [
             {
@@ -7853,13 +7726,13 @@
       "__type__": "cc.Node",
       "_name": "arrUp",
       "_parent": {
-        "__id__": 116
+        "__id__": 114
       },
       "_components": [
         {
           "__type__": "cc.Sprite",
           "node": {
-            "__id__": 119
+            "__id__": 117
           },
           "_materials": [
             {
@@ -7897,17 +7770,17 @@
       "__type__": "cc.Node",
       "_name": "SubWeapon",
       "_parent": {
-        "__id__": 115
+        "__id__": 113
       },
       "_children": [
         {
+          "__id__": 119
+        },
+        {
+          "__id__": 120
+        },
+        {
           "__id__": 121
-        },
-        {
-          "__id__": 122
-        },
-        {
-          "__id__": 123
         }
       ],
       "_trs": {
@@ -7931,13 +7804,13 @@
       "__type__": "cc.Node",
       "_name": "bB_1",
       "_parent": {
-        "__id__": 120
+        "__id__": 118
       },
       "_components": [
         {
           "__type__": "cc.Sprite",
           "node": {
-            "__id__": 121
+            "__id__": 119
           },
           "_materials": [
             {
@@ -7977,13 +7850,13 @@
       "__type__": "cc.Node",
       "_name": "icmain",
       "_parent": {
-        "__id__": 120
+        "__id__": 118
       },
       "_components": [
         {
           "__type__": "cc.Sprite",
           "node": {
-            "__id__": 122
+            "__id__": 120
           },
           "_materials": [
             {
@@ -8021,13 +7894,13 @@
       "__type__": "cc.Node",
       "_name": "arrUp",
       "_parent": {
-        "__id__": 120
+        "__id__": 118
       },
       "_components": [
         {
           "__type__": "cc.Sprite",
           "node": {
-            "__id__": 123
+            "__id__": 121
           },
           "_materials": [
             {
@@ -8065,17 +7938,17 @@
       "__type__": "cc.Node",
       "_name": "Weapon",
       "_parent": {
-        "__id__": 115
+        "__id__": 113
       },
       "_children": [
         {
+          "__id__": 123
+        },
+        {
+          "__id__": 124
+        },
+        {
           "__id__": 125
-        },
-        {
-          "__id__": 126
-        },
-        {
-          "__id__": 127
         }
       ],
       "_trs": {
@@ -8099,13 +7972,13 @@
       "__type__": "cc.Node",
       "_name": "bB_1",
       "_parent": {
-        "__id__": 124
+        "__id__": 122
       },
       "_components": [
         {
           "__type__": "cc.Sprite",
           "node": {
-            "__id__": 125
+            "__id__": 123
           },
           "_materials": [
             {
@@ -8145,13 +8018,13 @@
       "__type__": "cc.Node",
       "_name": "icmain",
       "_parent": {
-        "__id__": 124
+        "__id__": 122
       },
       "_components": [
         {
           "__type__": "cc.Sprite",
           "node": {
-            "__id__": 126
+            "__id__": 124
           },
           "_materials": [
             {
@@ -8189,13 +8062,13 @@
       "__type__": "cc.Node",
       "_name": "arrUp",
       "_parent": {
-        "__id__": 124
+        "__id__": 122
       },
       "_components": [
         {
           "__type__": "cc.Sprite",
           "node": {
-            "__id__": 127
+            "__id__": 125
           },
           "_materials": [
             {
@@ -8237,16 +8110,16 @@
       },
       "_children": [
         {
-          "__id__": 129
+          "__id__": 127
         },
         {
-          "__id__": 132
+          "__id__": 130
         },
         {
-          "__id__": 135
+          "__id__": 133
         },
         {
-          "__id__": 138
+          "__id__": 136
         }
       ],
       "_active": false,
@@ -8271,18 +8144,18 @@
       "__type__": "cc.Node",
       "_name": "重置",
       "_parent": {
-        "__id__": 128
+        "__id__": 126
       },
       "_children": [
         {
-          "__id__": 130
+          "__id__": 128
         }
       ],
       "_components": [
         {
           "__type__": "cc.Button",
           "node": {
-            "__id__": 129
+            "__id__": 127
           },
           "clickEvents": [
             {
@@ -8341,7 +8214,7 @@
             "__uuid__": "29FYIk+N1GYaeWH/q1NxQO"
           },
           "_N$target": {
-            "__id__": 130
+            "__id__": 128
           }
         }
       ],
@@ -8372,18 +8245,18 @@
       "_name": "Background",
       "_objFlags": 512,
       "_parent": {
-        "__id__": 129
+        "__id__": 127
       },
       "_children": [
         {
-          "__id__": 131
+          "__id__": 129
         }
       ],
       "_components": [
         {
           "__type__": "cc.Sprite",
           "node": {
-            "__id__": 130
+            "__id__": 128
           },
           "_materials": [
             {
@@ -8399,7 +8272,7 @@
         {
           "__type__": "cc.Widget",
           "node": {
-            "__id__": 130
+            "__id__": 128
           },
           "alignMode": 0,
           "_alignFlags": 45,
@@ -8434,13 +8307,13 @@
       "_name": "Label",
       "_objFlags": 512,
       "_parent": {
-        "__id__": 130
+        "__id__": 128
       },
       "_components": [
         {
           "__type__": "cc.Label",
           "node": {
-            "__id__": 131
+            "__id__": 129
           },
           "_materials": [
             {
@@ -8487,18 +8360,18 @@
       "__type__": "cc.Node",
       "_name": "播放",
       "_parent": {
-        "__id__": 128
+        "__id__": 126
       },
       "_children": [
         {
-          "__id__": 133
+          "__id__": 131
         }
       ],
       "_components": [
         {
           "__type__": "cc.Button",
           "node": {
-            "__id__": 132
+            "__id__": 130
           },
           "clickEvents": [
             {
@@ -8557,7 +8430,7 @@
             "__uuid__": "29FYIk+N1GYaeWH/q1NxQO"
           },
           "_N$target": {
-            "__id__": 133
+            "__id__": 131
           }
         }
       ],
@@ -8588,18 +8461,18 @@
       "_name": "Background",
       "_objFlags": 512,
       "_parent": {
-        "__id__": 132
+        "__id__": 130
       },
       "_children": [
         {
-          "__id__": 134
+          "__id__": 132
         }
       ],
       "_components": [
         {
           "__type__": "cc.Sprite",
           "node": {
-            "__id__": 133
+            "__id__": 131
           },
           "_materials": [
             {
@@ -8615,7 +8488,7 @@
         {
           "__type__": "cc.Widget",
           "node": {
-            "__id__": 133
+            "__id__": 131
           },
           "alignMode": 0,
           "_alignFlags": 45,
@@ -8650,13 +8523,13 @@
       "_name": "Label",
       "_objFlags": 512,
       "_parent": {
-        "__id__": 133
+        "__id__": 131
       },
       "_components": [
         {
           "__type__": "cc.Label",
           "node": {
-            "__id__": 134
+            "__id__": 132
           },
           "_materials": [
             {
@@ -8703,18 +8576,18 @@
       "__type__": "cc.Node",
       "_name": "移出",
       "_parent": {
-        "__id__": 128
+        "__id__": 126
       },
       "_children": [
         {
-          "__id__": 136
+          "__id__": 134
         }
       ],
       "_components": [
         {
           "__type__": "cc.Button",
           "node": {
-            "__id__": 135
+            "__id__": 133
           },
           "clickEvents": [
             {
@@ -8773,7 +8646,7 @@
             "__uuid__": "29FYIk+N1GYaeWH/q1NxQO"
           },
           "_N$target": {
-            "__id__": 136
+            "__id__": 134
           }
         }
       ],
@@ -8804,18 +8677,18 @@
       "_name": "Background",
       "_objFlags": 512,
       "_parent": {
-        "__id__": 135
+        "__id__": 133
       },
       "_children": [
         {
-          "__id__": 137
+          "__id__": 135
         }
       ],
       "_components": [
         {
           "__type__": "cc.Sprite",
           "node": {
-            "__id__": 136
+            "__id__": 134
           },
           "_materials": [
             {
@@ -8831,7 +8704,7 @@
         {
           "__type__": "cc.Widget",
           "node": {
-            "__id__": 136
+            "__id__": 134
           },
           "alignMode": 0,
           "_alignFlags": 45,
@@ -8866,13 +8739,13 @@
       "_name": "Label",
       "_objFlags": 512,
       "_parent": {
-        "__id__": 136
+        "__id__": 134
       },
       "_components": [
         {
           "__type__": "cc.Label",
           "node": {
-            "__id__": 137
+            "__id__": 135
           },
           "_materials": [
             {
@@ -8919,18 +8792,18 @@
       "__type__": "cc.Node",
       "_name": "移入",
       "_parent": {
-        "__id__": 128
+        "__id__": 126
       },
       "_children": [
         {
-          "__id__": 139
+          "__id__": 137
         }
       ],
       "_components": [
         {
           "__type__": "cc.Button",
           "node": {
-            "__id__": 138
+            "__id__": 136
           },
           "clickEvents": [
             {
@@ -8989,7 +8862,7 @@
             "__uuid__": "29FYIk+N1GYaeWH/q1NxQO"
           },
           "_N$target": {
-            "__id__": 139
+            "__id__": 137
           }
         }
       ],
@@ -9020,18 +8893,18 @@
       "_name": "Background",
       "_objFlags": 512,
       "_parent": {
-        "__id__": 138
+        "__id__": 136
       },
       "_children": [
         {
-          "__id__": 140
+          "__id__": 138
         }
       ],
       "_components": [
         {
           "__type__": "cc.Sprite",
           "node": {
-            "__id__": 139
+            "__id__": 137
           },
           "_materials": [
             {
@@ -9047,7 +8920,7 @@
         {
           "__type__": "cc.Widget",
           "node": {
-            "__id__": 139
+            "__id__": 137
           },
           "alignMode": 0,
           "_alignFlags": 45,
@@ -9082,13 +8955,13 @@
       "_name": "Label",
       "_objFlags": 512,
       "_parent": {
-        "__id__": 139
+        "__id__": 137
       },
       "_components": [
         {
           "__type__": "cc.Label",
           "node": {
-            "__id__": 140
+            "__id__": 138
           },
           "_materials": [
             {
@@ -9140,10 +9013,10 @@
       },
       "_children": [
         {
-          "__id__": 142
+          "__id__": 140
         },
         {
-          "__id__": 143
+          "__id__": 141
         }
       ],
       "_active": false,
@@ -9169,14 +9042,14 @@
       "__type__": "cc.Node",
       "_name": "virus",
       "_parent": {
-        "__id__": 141
+        "__id__": 139
       },
       "_components": [
         null,
         {
           "__type__": "49d0auleM9GkaUgf+inMFoR",
           "node": {
-            "__id__": 142
+            "__id__": 140
           },
           "_program": 13,
           "_props": [
@@ -9210,7 +9083,7 @@
         {
           "__type__": "cc.Sprite",
           "node": {
-            "__id__": 142
+            "__id__": 140
           },
           "_materials": [
             null
@@ -9252,21 +9125,21 @@
       "__type__": "cc.Node",
       "_name": "New Node",
       "_parent": {
-        "__id__": 141
+        "__id__": 139
       },
       "_children": [
         {
-          "__id__": 144
+          "__id__": 142
         }
       ],
       "_components": [
         {
           "__type__": "74409Wpr3REPbp+0qqfHt1C",
           "node": {
-            "__id__": 143
+            "__id__": 141
           },
           "colorSpritNode": {
-            "__id__": 142
+            "__id__": 140
           }
         }
       ],
@@ -9291,24 +9164,24 @@
       "__type__": "cc.Node",
       "_name": "New Button",
       "_parent": {
-        "__id__": 143
+        "__id__": 141
       },
       "_children": [
         {
-          "__id__": 145
+          "__id__": 143
         }
       ],
       "_components": [
         {
           "__type__": "cc.Button",
           "node": {
-            "__id__": 144
+            "__id__": 142
           },
           "clickEvents": [
             {
               "__type__": "cc.ClickEvent",
               "target": {
-                "__id__": 143
+                "__id__": 141
               },
               "_componentId": "74409Wpr3REPbp+0qqfHt1C",
               "handler": "changeColor"
@@ -9360,7 +9233,7 @@
             "__uuid__": "29FYIk+N1GYaeWH/q1NxQO"
           },
           "_N$target": {
-            "__id__": 145
+            "__id__": 143
           }
         }
       ],
@@ -9391,18 +9264,18 @@
       "_name": "Background",
       "_objFlags": 512,
       "_parent": {
-        "__id__": 144
+        "__id__": 142
       },
       "_children": [
         {
-          "__id__": 146
+          "__id__": 144
         }
       ],
       "_components": [
         {
           "__type__": "cc.Sprite",
           "node": {
-            "__id__": 145
+            "__id__": 143
           },
           "_materials": [
             {
@@ -9418,7 +9291,7 @@
         {
           "__type__": "cc.Widget",
           "node": {
-            "__id__": 145
+            "__id__": 143
           },
           "alignMode": 0,
           "_alignFlags": 45,
@@ -9453,13 +9326,13 @@
       "_name": "Label",
       "_objFlags": 512,
       "_parent": {
-        "__id__": 145
+        "__id__": 143
       },
       "_components": [
         {
           "__type__": "cc.Label",
           "node": {
-            "__id__": 146
+            "__id__": 144
           },
           "_materials": [
             {
@@ -9755,33 +9628,6 @@
         30,
         0,
         30,
-        0
-      ]
-    }
-  },
-  {
-    "__type__": "cc.SpriteFrame",
-    "content": {
-      "name": "Screenshot_2019-06-13-13-16-08",
-      "texture": "cchDipqX9OV6bPuoPeu2pT",
-      "rect": [
-        0,
-        0,
-        900,
-        1600
-      ],
-      "offset": [
-        0,
-        0
-      ],
-      "originalSize": [
-        900,
-        1600
-      ],
-      "capInsets": [
-        0,
-        0,
-        0,
         0
       ]
     }
@@ -10714,10 +10560,6 @@
     }
   },
   {
-    "__type__": "cc.Texture2D",
-    "content": "0,9729,9729,33071,33071,0,0,1"
-  },
-  {
     "__type__": "cc.SpriteFrame",
     "content": {
       "name": "b3 (3)",
@@ -10911,10 +10753,6 @@
         "__uuid__": "b37zWoOMxE9rNkzYGKdPVo"
       }
     }
-  },
-  {
-    "__type__": "cc.Texture2D",
-    "content": "1,9729,9729,33071,33071,0,0,1"
   },
   {
     "__type__": "cc.SpriteFrame",
